@@ -1,1 +1,104 @@
 // Specific CSS for your home-page
+.home {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://res.cloudinary.com/dv7b712cp/image/upload/v1580242546/Hello%20Arsene/hello-arsene-home.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.home-title {
+  font-size: 80px;
+  font-family: helvetica-bold;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px white;
+}
+
+.home-title:hover {
+  font-size: 80px;
+  font-family: helvetica-bold;
+  position: absolute;
+  color: white;
+}
+
+.home-subtitle {
+  font-size: 30px;
+  font-family: helvetica-bold;
+  color: white;
+  position: absolute;
+}
+
+.row {
+  padding: 50px;
+  margin: 5%;
+}
+
+.filter {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 51, 51, 0.5);
+}
+
+.logo-wrapper {
+  padding: 10px;
+  text-align: center;
+}
+
+.main-section {
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.references h3{
+  color: #333333;
+  font-family: helvetica;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.logo-container {
+  padding: 15px;
+}
+
+.main-section2 {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ margin-top: 0;
+ margin-right: auto;
+ margin-left: auto;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ text-align: center;
+ background-color: #333333;
+ transform-origin: right top;
+ transform: skewY(4.5deg);
+ background: #333333;
+}
+
+.big-paragraph {
+  color: white;
+  padding: 30px;
+  transform: skewY(-4deg);
+}
