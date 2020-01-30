@@ -13,14 +13,22 @@
 }
 
 .home-title {
-  font-size: 100px;
+  font-size: 80px;
+  font-family: helvetica-bold;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px white;
+}
+
+.home-subtitle {
+  font-size: 30px;
   font-family: helvetica-bold;
   color: white;
   position: absolute;
 }
 
 .row {
-  padding: 0;
+  padding: 50px;
   margin: 5%;
 }
 
@@ -32,3 +40,4 @@
   height: 100%;
   background: rgba(51, 51, 51, 0.5);
 }
+
