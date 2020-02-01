@@ -6,11 +6,10 @@
   <%= @training.duration_in_minutes %>
 </ul>
 
-<% @exercises.each do |exercise| %>
+<% @displayed_exercises.each do |exercise| %>
   <ul>
     <li><%= exercise.name %></li>
   </ul>
   <% end %>
 
-  <% @selected_exercises %>
 
