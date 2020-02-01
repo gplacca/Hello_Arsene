@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :teams, only: [:show] do
     resources :trainings, only: [:create]
   end
+  resources :trainings, only: [:edit, :index]
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

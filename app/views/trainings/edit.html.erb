@@ -1,0 +1,15 @@
+<h1>Edit training</h1>
+
+<ul>
+  <%= @training.name %>
+  <%= @training.start_at %>
+  <%= @training.duration_in_minutes %>
+</ul>
+
+<% @displayed_exercises.each do |exercise| %>
+  <ul>
+    <li><%= exercise.name %></li>
+  </ul>
+  <% end %>
+
+

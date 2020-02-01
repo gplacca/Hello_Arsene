@@ -1,24 +1,38 @@
 class TrainingsController < ApplicationController
+
   def index
   end
 
   def create
-    @team = Team.find(params[:team_id])
+    team = Team.find(params[:team_id])
     @training = Training.new(training_params)
-    @training.team = @team
+    @training.team = team
     @training.save
-
-    redirect_to team_path(@team)
+    if @training.save
+      redirect_to edit_training_path(@training)
+    else
+      redirect_to team_path(team)
+    end
   end
 
   def edit
+    @displayed_exercises = []
     @exercises = Exercise.all
-    @team = Team.find(params[:team_id])
-    @training = Training.new(training_params)
-    @training.team = @team
-    @training.save
+    @exercises.each do |exercise|
+      if exercise.category == "Phases offensives"
+        @displayed_exercises << exercise
+      else
+      end
+  end
 
 
+    end
+
+    @training = Training.find(params[:id])
+    # @team = Team.find(params[:team_id])
+    # @training = Training.new(training_params)
+    # @training.team = @team
+    # @training.save
   end
 
   private
