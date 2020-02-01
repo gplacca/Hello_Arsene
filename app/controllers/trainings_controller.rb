@@ -3,22 +3,27 @@ class TrainingsController < ApplicationController
   end
 
   def create
-    @team = Team.find(params[:team_id])
+    team = Team.find(params[:team_id])
     @training = Training.new(training_params)
-    @training.team = @team
+    @training.team = team
     @training.save
-
-    redirect_to team_path(@team)
+    if @training.save
+      redirect_to edit_training_path(@training)
+    else
+      redirect_to team_path(team)
+    end
   end
 
   def edit
     @exercises = Exercise.all
-    @team = Team.find(params[:team_id])
-    @training = Training.new(training_params)
-    @training.team = @team
-    @training.save
+    @selected_exercises = Exercise.
+    @training = Training.find(params[:id])
 
 
+    # @team = Team.find(params[:team_id])
+    # @training = Training.new(training_params)
+    # @training.team = @team
+    # @training.save
   end
 
   private
