@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 2020_01_28_200519) do
   end
 
   create_table "training_exercises", force: :cascade do |t|
-    t.datetime "starts_at"
+    t.datetime "start_at"
     t.integer "duration_in_minutes"
     t.bigint "training_id"
     t.bigint "exercise_id"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2020_01_28_200519) do
     t.datetime "start_at"
     t.integer "duration_in_minutes"
     t.bigint "team_id"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["team_id"], name: "index_trainings_on_team_id"
@@ -87,9 +88,11 @@ ActiveRecord::Schema.define(version: 2020_01_28_200519) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "game_exercise_players", "players"
   add_foreign_key "game_exercise_players", "training_exercises"
   add_foreign_key "players", "teams"
   add_foreign_key "teams", "users"
   add_foreign_key "training_exercises", "exercises"
+  add_foreign_key "training_exercises", "trainings"
   add_foreign_key "trainings", "teams"
 end
