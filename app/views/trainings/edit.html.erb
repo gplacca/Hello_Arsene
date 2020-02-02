@@ -6,10 +6,25 @@
   <%= @training.duration_in_minutes %>
 </ul>
 
-<% @displayed_exercises.each do |exercise| %>
-  <ul>
-    <li><%= exercise.name %></li>
-  </ul>
-  <% end %>
 
+<%= form_tag movies_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a movie"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <div id="movies">
+        <% @exercises.each do |exercise| %>
+          <h4><%= exercise.name %></h4>
+          <p><%= exercise.category %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
