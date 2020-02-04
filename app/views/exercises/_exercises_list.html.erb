@@ -25,6 +25,12 @@
                  <h6>  <%= exercise.category %> </h6>
                  <h6> <%= exercise.id %> </h6>
 
+<!--                  <%#= simple_form_for [@training, @exercise, @training_exercise] do |f| %>
+                   <%#= f.input :start_at %>
+                   <%#= f.input :duration_in_minutes %>
+                   <%#= f.submit "save", class: "btn btn-primary" %>
+                 <%# end %> -->
+
                  <form action="/trainings/<%= Training.find(params[:id]).id %>/edit">
                    <div class="form-group">
                      <label for="start_at">Starts at</label>

@@ -2,10 +2,10 @@ class TrainingExercisesController < ApplicationController
 
   def new
     @training = Training.find(params[:id])
-    @exercise = Exercise.find(params[:exercise])
+    # @exercise = Exercise.find(params[:exercise])
     @training_exercise = TrainingExercise.new
     @training_exercise.training = @training
-    @training_exercise.exercise = @exercise
+    # @training_exercise.exercise = @exercise
   end
 
   def create
@@ -16,8 +16,6 @@ class TrainingExercisesController < ApplicationController
     @training_exercise.exercise = @exercise
     @training_exercise.save
   end
-
-
 
   private
 
