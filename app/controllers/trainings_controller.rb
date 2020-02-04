@@ -1,5 +1,4 @@
 class TrainingsController < ApplicationController
-
   def index
   end
 
@@ -16,8 +15,9 @@ class TrainingsController < ApplicationController
   end
 
   def edit
-    if
     @exercises = Exercise.all
+    @training = Training.find(params[:id])
+
     # @team = Team.find(params[:team_id])
     # @training = Training.new(training_params)
     # @training.team = @team

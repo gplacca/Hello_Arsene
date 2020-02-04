@@ -6,25 +6,11 @@
   <%= @training.duration_in_minutes %>
 </ul>
 
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="exercises_list">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
 
-<%= form_tag movies_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a movie"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8 offset-sm-2">
-      <div id="movies">
-        <% @exercises.each do |exercise| %>
-          <h4><%= exercise.name %></h4>
-          <p><%= exercise.category %></p>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render "exercises/exercises_list" %>
