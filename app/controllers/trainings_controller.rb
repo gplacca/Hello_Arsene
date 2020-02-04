@@ -1,5 +1,4 @@
 class TrainingsController < ApplicationController
-
   def index
   end
 
@@ -16,19 +15,9 @@ class TrainingsController < ApplicationController
   end
 
   def edit
-    @displayed_exercises = []
     @exercises = Exercise.all
-    @exercises.each do |exercise|
-      if exercise.category == "Phases offensives"
-        @displayed_exercises << exercise
-      else
-      end
-  end
-
-
-    end
-
     @training = Training.find(params[:id])
+
     # @team = Team.find(params[:team_id])
     # @training = Training.new(training_params)
     # @training.team = @team
