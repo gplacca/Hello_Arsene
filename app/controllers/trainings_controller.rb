@@ -17,6 +17,7 @@ class TrainingsController < ApplicationController
   def edit
     @exercises = Exercise.all
     @training = Training.find(params[:id])
+    @training_exercise = TrainingExercise.new
 
     # @team = Team.find(params[:team_id])
     # @training = Training.new(training_params)
