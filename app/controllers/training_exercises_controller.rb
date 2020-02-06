@@ -9,12 +9,16 @@ class TrainingExercisesController < ApplicationController
   end
 
   def create
-    @training = Training.find(params[:id])
-    @exercise = Exercise.find(params[:exercise])
+    @training = Training.find(params[:training_id])
+    @exercise = Exercise.find(params[:training_exercise][:exercise])
     @training_exercise = TrainingExercise.new(training_exercise_params)
     @training_exercise.training = @training
     @training_exercise.exercise = @exercise
-    @training_exercise.save
+    if @training_exercise.save
+      redirect_to edit_training_path(@training)
+    else
+      render :new
+    end
   end
 
   private
