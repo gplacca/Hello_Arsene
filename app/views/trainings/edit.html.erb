@@ -12,6 +12,7 @@
 
 <% @training.training_exercises.each do |training_exercise| %>
  <p><%= training_exercise.exercise.name %></p>
+<p><%= training_exercise.duration_in_minutes %>min</p>
  <% end %>
 
 <%# @training_exercise: @training_exercise  %>
