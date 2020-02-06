@@ -16,7 +16,7 @@ class TrainingsController < ApplicationController
 
   def edit
     @training_exercises = TrainingExercise.all
-    if params[:search]
+    if params[:search].present?
       @exercises = Exercise.search_by_name_and_category(params[:search])
     else
       @exercises = Exercise.all
