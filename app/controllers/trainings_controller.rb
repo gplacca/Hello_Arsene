@@ -15,8 +15,12 @@ class TrainingsController < ApplicationController
   end
 
   def edit
-    @exercises = Exercise.all
     @training_exercises = TrainingExercise.all
+    if params[:search]
+      @exercises = Exercise.search_by_name_and_category(params[:search])
+    else
+      @exercises = Exercise.all
+    end
     @training = Training.find(params[:id])
     @training_exercise = TrainingExercise.new
 
