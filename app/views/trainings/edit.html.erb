@@ -19,4 +19,9 @@
 
 <%= render "exercises/exercises_list" %>
 
+<% @training_exercises.each do |training_exercise| %>
+ <p><%= training_exercise.exercise.name %></p>
+ <% end %>
+
 <%# @training_exercise: @training_exercise  %>
+
