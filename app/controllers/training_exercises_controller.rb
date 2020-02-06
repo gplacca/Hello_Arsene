@@ -1,4 +1,6 @@
 class TrainingExercisesController < ApplicationController
+  def index
+  end
 
   def new
     @training = Training.find(params[:id])
