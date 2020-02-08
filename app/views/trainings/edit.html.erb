@@ -24,7 +24,9 @@
                 </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Delete</a>
+                 <%= link_to "Delete", training_training_exercise_path(@training, training_exercise),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
               </li>
             </ul>
           </div>

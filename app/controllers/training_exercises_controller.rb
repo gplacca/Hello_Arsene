@@ -24,8 +24,6 @@ class TrainingExercisesController < ApplicationController
   end
 
   def edit
-
-
   end
 
   def update
@@ -33,8 +31,11 @@ class TrainingExercisesController < ApplicationController
     @training = @training_exercise.training
     @training_exercise.update(training_exercise_params)
 
+  def destroy
+    @training_exercise = TrainingExercise.find(params[:id])
+    @training = @training_exercise.training
+    @training_exercise.destroy
     redirect_to edit_training_path(@training)
-
   end
 
   def show
