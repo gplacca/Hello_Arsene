@@ -23,11 +23,6 @@ class TrainingsController < ApplicationController
     end
     @training = Training.find(params[:id])
     @training_exercise = TrainingExercise.new
-
-    # @team = Team.find(params[:team_id])
-    # @training = Training.new(training_params)
-    # @training.team = @team
-    # @training.save
   end
 
   private
