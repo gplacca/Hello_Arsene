@@ -5,11 +5,8 @@ Rails.application.routes.draw do
     resources :trainings, only: [:create, :index]
   end
 
-  resources :trainings, only: [:edit, :index] do
-    resources :exercise, only: [:show]
-  end
-
-    resources :trainings, only: [:edit, :index] do
+    resources :trainings, only: [:edit, :show] do
+      resources :exercise, only: [:show]
       resources :training_exercises, only: [:new, :create, :show, :destroy, :update]
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
