@@ -10,10 +10,35 @@
 
 <%= render "exercises/exercises_list" %>
 
-<% @training.training_exercises.each do |training_exercise| %>
- <p><%= training_exercise.exercise.name %></p>
-<p><%= training_exercise.duration_in_minutes %>min</p>
- <% end %>
 
-<%# @training_exercise: @training_exercise  %>
+<div class="container">
 
+  <ul>
+    <li <% @training.training_exercises.each do |training_exercise| %>>
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Edit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Delete</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-9">
+              <h5 class="card-title"><%= training_exercise.exercise.name %></h5>
+            </div>
+            <div class="col-sm-3">
+              <p class="card-text">Duration :  <%= training_exercise.duration_in_minutes %>min</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Show</a>
+        </div>
+      </div>
+      <% end %>
+    </li>
+  </ul>
+</div>
