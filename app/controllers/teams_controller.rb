@@ -4,4 +4,8 @@ class TeamsController < ApplicationController
     @training = Training.new
     @last_five_trainings = @team.trainings.last(5)
   end
+
+  def edit
+    @training = Training.all
+  end
 end
