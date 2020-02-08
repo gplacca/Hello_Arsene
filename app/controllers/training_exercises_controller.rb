@@ -23,6 +23,15 @@ class TrainingExercisesController < ApplicationController
     end
   end
 
+  def destroy
+    @training_exercise = TrainingExercise.find(params[:id])
+    @training = @training_exercise.training
+
+    @training_exercise.destroy
+    redirect_to edit_training_path(@training)
+
+  end
+
   private
 
   def training_exercise_params
