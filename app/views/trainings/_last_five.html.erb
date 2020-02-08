@@ -1,6 +1,6 @@
 <h2> Last Five Trainings</h2>
 
 <% @last_five_trainings.each do |training| %>
-    <p><%= training.name %> <%= link_to "Edit", edit_training_path(training.id) %> </p>
+    <p><%= training.name %> <%= link_to "Edit", edit_training_path(training.id) %> <%= link_to "Show", training_path(training.id) %></p>
 
 <% end %>

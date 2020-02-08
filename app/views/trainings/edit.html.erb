@@ -8,6 +8,16 @@
 
 <%= link_to "Save session", team_path %>
 
+<div class="progress">
+ <% @training.training_exercises.each do |training_exercise| %>
+
+
+  <div class="progress-bar" role="progressbar" style="width: <%= training_exercise.percentage %>%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax=" <%= @training.duration_in_minutes %>"></div>
+  <!-- <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div> -->
+  <!-- <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div> -->
+  <% end %>
+</div>
+
 <%= render "exercises/exercises_list" %>
 
 
