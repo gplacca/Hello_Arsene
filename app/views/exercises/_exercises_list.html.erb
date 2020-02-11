@@ -38,6 +38,7 @@
                    <h5><%= exercise.name %></h5>
                    <h6>  <%= exercise.category %> </h6>
                    <h6> <%= exercise.id %> </h6>
+                   <h6> <%= exercise.description %> </h6>
 
                   <%= simple_form_for [ @training, @training_exercise ] do |f| %>
                     <%= f.hidden_field :exercise, as: :hidden, :value => exercise.id %>
