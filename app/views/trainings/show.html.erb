@@ -1,0 +1,8 @@
+<h1>La redirection marche</h1>
+
+<% @training_exercises.each do |training_exercise| %>
+  <h5> <%= training_exercise.exercise.name %></h1>
+  <h6> <%= training_exercise.duration_in_minutes %> </h6>
+<% end %>
+
+<%= link_to "Edit", edit_training_path(@training.id) %>
