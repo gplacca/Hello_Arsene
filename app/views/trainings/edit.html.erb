@@ -18,56 +18,68 @@
   <% end %>
 </div>
 
-<%= render "exercises/exercises_list" %>
-
-
 <div class="container">
-  <ul>
+  <div class="cards">
     <% @training.training_exercises.each do |training_exercise| %>
-      <li>
-        <div class="card text-center">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.footballreach.com/community/uploads/monthly_2017_08/Footballs.jpg.2396e66e5c22e021727920770799423c.jpg)">
+      <h3> <%= training_exercise.exercise.name  %> </h3>
+      <p> <%= training_exercise.duration_in_minutes %> minutes </p>
+      <br>
+      <button type="edit-button" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
+        Edit
+      </button>
+
+      <%= link_to "Delete", training_training_exercise_path(@training, training_exercise), class:"btn btn-success rounded btn-lg",
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>
+    </div>
+  </div>
+</div>
+<!--         <div class="card text-center">
           <div class="card-header">
             <ul class="nav nav-pills card-header-pills">
               <li class="nav-item">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit_training_exercise-<%#= training_exercise.id %>">
                   Edit
                 </button>
               </li>
               <li class="nav-item">
-                 <%= link_to "Delete", training_training_exercise_path(@training, training_exercise),
+                 <%#= link_to "Delete", training_training_exercise_path(@training, training_exercise),
                 method: :delete,
                 data: { confirm: "Are you sure?" } %>
               </li>
             </ul>
-          </div>
-          <div class="modal fade" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Add session</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <%= simple_form_for [ @training, training_exercise ] do |f| %>
-                    <%= f.hidden_field :exercise, as: :hidden, :value => training_exercise.exercise.id %>
-                    <%#= f.input :exercise, selected: f.exercise.category %>
-                    <%= f.input :start_at %>
-                    <%= f.input :duration_in_minutes %>
-                    <%= f.submit "Edit", class: "btn btn-primary" %>
-                  <% end %>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-            <a href="#" class="btn btn-primary">Show</a>
-          </div>
+          </div> -->
+  <div class="modal fade" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add session</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      </li>
+        <div class="modal-body">
+          <%= simple_form_for [ @training, training_exercise ] do |f| %>
+            <%= f.hidden_field :exercise, as: :hidden, :value => training_exercise.exercise.id %>
+            <%#= f.input :exercise, selected: f.exercise.category %>
+            <%= f.input :start_at %>
+            <%= f.input :duration_in_minutes %>
+            <%= f.submit "Edit", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+<!--           </div>
+      <a href="#" class="btn btn-primary">Show</a>
+    </div> -->
+  </div>
+<!--       </li>
     <% end %>
-  </ul>
+  </ul> -->
 </div>
+
+<%= render "exercises/exercises_list" %>
