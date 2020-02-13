@@ -1,9 +1,7 @@
 <h1>Team view</h1>
 <%= @team.name %>
 
-
 <%= render "trainings/last_five" %>
-
 
 
 <!-- Button trigger modal -->
@@ -36,3 +34,89 @@
     </div>
   </div>
 </div>
+
+  <div class="grid latest-and-upcoming-fixtures__grid">
+
+<section class="game-promo
+  game-promo--dark
+  game-promo--firstTeam">
+  <h3 class="game-promo__heading u-text-uppercase"><span>Dernier match</span> — <time class="hide-when-js" data-abbr="true" datetime="2020-02-12 18:30" data-js-utc-time-adjust="" style="display: inline;">12 févr 2020, 19:30</time></h3>
+  <div class="game-promo__body">
+    <div class="game-promo__competition">
+      National 2
+    </div>
+
+    <div class="game-promo__main">
+      <p class="game-promo__location">
+        Stade Georges Carpentier, Paris
+      </p>
+      <div class="game-promo__team">
+        <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581619151/130px-FCGobelinsParis13_xvlc7e.png", alt: "alttext", width:"120px"  %>
+        <p class="game-promo__team-name">
+        FC Gobelins
+        </p>
+      </div>
+
+      <div class="game-promo__middle-section game-promo__middle-section--has-score">
+          <div class="game-promo__score">
+            2
+            -
+            3
+          </div>
+          <p class="game-promo__middle-section-description">
+            FT
+          </p>
+      </div>
+
+      <div class="game-promo__team">
+        <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581619414/logo-EAG-FOND-couleur-e1559834773452-854x794_vt5kqy.png", alt: "alttext", width:"120px"  %>
+        <p class="game-promo__team-name">
+        EA Guingamp 2
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="game-promo
+
+  game-promo--firstTeam">
+  <h3 class="game-promo__heading u-text-uppercase"><span>Prochain match</span> — <time class="hide-when-js" data-abbr="true" datetime="2020-02-15 16:30" data-js-utc-time-adjust="" style="display: inline;">15 févr 2020, 17:30</time></h3>
+  <div class="game-promo__body">
+    <div class="game-promo__competition">
+      National 2
+    </div>
+
+    <div class="game-promo__main">
+      <p class="game-promo__location">
+      Stade Jacques Couvret
+      </p>
+      <div class="game-promo__team">
+        <%= image_tag "", alt: "Logo Chartres", width:"120px"  %>
+        <p class="game-promo__team-name">
+         C Chartres F.
+        </p>
+      </div>
+
+      <div class="game-promo__middle-section ">
+          <p class="game-promo__vs">
+            VS
+          </p>
+          <p class="game-promo__middle-section-description">
+            <time class="hide-when-js" data-js-utc-time-adjust="" data-date-abbr-only="true" datetime="2020-02-15 16:30" style="display: inline;">15 févr 2020</time>
+          </p>
+      </div>
+
+      <div class="game-promo__team">
+        <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581619151/130px-FCGobelinsParis13_xvlc7e.png", alt: "alttext", width:"120px"  %>
+        <p class="game-promo__team-name">
+          FC Gobelins
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </div>
+
