@@ -1,6 +1,5 @@
-<h1>Team view</h1>
-<%= @team.club_name %>
-<%= @team.name %>
+<h1><%= @team.club_name %></h1>
+<h2><%= @team.name %></h2>
 
 
 <div class="grid latest-and-upcoming-fixtures__grid">
@@ -22,7 +21,7 @@
           <div class="game-promo__team">
             <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
             <p class="game-promo__team-name">
-            Le Wagon
+            FC Wagon
             </p>
           </div>
 
@@ -81,7 +80,7 @@
           <div class="game-promo__team">
             <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
             <p class="game-promo__team-name">
-              Le Wagon
+              FC Wagon
             </p>
           </div>
 
@@ -96,7 +95,7 @@
 
 <div class = "row">
    <div class = "col">
-    <div class ="container">
+    <div class ="container-league">
   <div class="team-hub__header">
       Classement
     </div>
@@ -151,7 +150,7 @@
                       </figure>
                   </div>
                   <p class="league-table__team-name">
-                    Le Wagon
+                    FC Wagon
                   </p>
                 </div>
               </td>
@@ -395,7 +394,7 @@
   <div class = "col">
 <%= render "trainings/last_five" %>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Créer un entrainement
+  Créer une séance
 </button>
   </div>
 <!-- Button trigger modal -->
