@@ -1,6 +1,11 @@
-<h1><%= @team.club_name %></h1>
-<h2><%= @team.name %></h2>
-
+<div class ="header-team">
+  <div class ="filter-team">
+    <div class="team-title">
+      <h1><%= @team.club_name %></h1>
+      <h2><%= @team.name %></h2>
+    </div>
+  </div>
+</div>
 
 <div class="grid latest-and-upcoming-fixtures__grid">
     <div class = "row">
@@ -97,7 +102,7 @@
    <div class = "col">
     <div class ="container-league">
   <div class="team-hub__header">
-      Classement
+      <h2>Classement</h2>
     </div>
   <div class ="league-table">
     <table data-js-sortable-table>
@@ -393,7 +398,7 @@
   </div>
   <div class = "col">
 <%= render "trainings/last_five" %>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<button type="button" class="btn btn-success rounded btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
   Créer une séance
 </button>
   </div>
