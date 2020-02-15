@@ -1,17 +1,13 @@
 .cards {
   margin-top: 20px;
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
 }
 
-.card-category {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-
+.card {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.footballreach.com/community/uploads/monthly_2017_08/Footballs.jpg.2396e66e5c22e021727920770799423c.jpg);
+  width: 350px;
+  color: #fff;
+  height: 350px;
 }
 
 .card-category h3 {
