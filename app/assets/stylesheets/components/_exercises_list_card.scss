@@ -1,13 +1,31 @@
-.exercise-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+// .exercise-cards {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-gap: 16px;
+//   background-color: white;
+// }
+
+// .exercise-card {
+//   color: white;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   text-align: center;
+// }
+
+body.trainings-edit {
+    background-color: #333333;
+    color: white;
 }
 
-.exercise-cards-category {
-  color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+.card-exercise {
+    min-height: 100px;
+    border-radius: 5px;
+    background: #3e3e3e;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2)
+}
+
+.card-exercise h4 {
+    font-size: 18px;
 }

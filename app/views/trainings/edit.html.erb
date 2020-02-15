@@ -1,41 +1,91 @@
-<h1>Edit training</h1>
-
-<ul>
-  <li><%= @training.name %></li>
-  <li><%= @training.start_at %></li>
-  <li><%= @training.duration_in_minutes %> minutes</li>
-</ul>
-
-<%= link_to "Save session", team_path %>
-
-<div class="progress">
- <% @training.training_exercises.each do |training_exercise| %>
-
-
-  <div class="progress-bar" role="progressbar" style="width: <%= training_exercise.percentage %>%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax=" <%= @training.duration_in_minutes %>"></div>
-  <!-- <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div> -->
-  <!-- <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div> -->
-  <% end %>
+<div class="container-fluid bg-darkgray pb-2 pt-3">
+  <h5 class="text-center text-white"> <%= @training.name %> </h5>
+  <div class="row justify-content-center pt-3">
+    <div class="col col-lg-2 text-center text-white">
+      <h5> <%= @training.start_at %></h5>
+    </div>
+    <div class="col col-lg-2 text-center text-white">
+      <h5> <%= @training.duration_in_minutes %> minutes</h5>
+    </div>
+  </div>
 </div>
 
+
+<div class="background-progress">
+  <div class="d-flex justify-content-center">
+    <div class="progress">
+     <% @training.training_exercises.order(:created_at).each do |training_exercise| %>
+        <div class="progress-bar" role="progressbar" style="width: <%= training_exercise.percentage %>%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax=" <%= @training.duration_in_minutes %>"></div>
+      <!-- <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div> -->
+      <!-- <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div> -->
+      <% end %>
+    </div>
+  </div>
+  <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %>
+</div>
+
+
 <div class="container">
-  <div class="cards d-flex flex-row flex-wrap justify-content-around align-items-start">
-    <% @training.training_exercises.each do |training_exercise| %>
-    <div class="card d-flex flex-column justify-content-between">
+  <div class="cards d-flex flex-row flex-wrap justify-content-start align-items-start">
+    <% @training.training_exercises.order(:created_at).each do |training_exercise| %>
+    <div class="card-training-exercise d-flex flex-column justify-content-between">
       <div>
         <h3> <%= training_exercise.exercise.name  %> </h3>
         <p> <%= training_exercise.duration_in_minutes %> minutes </p>
       </div>
 
       <div class="d-flex align-items-center justify-content-center">
-        <button type="edit-button" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
+
+        <button type="edit-button" class="edit-button" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
           Edit
         </button>
-        <%= link_to "Delete", training_training_exercise_path(@training, training_exercise), class:"btn btn-success rounded btn-lg",
+        <%= link_to "Delete", training_training_exercise_path(@training, training_exercise), class:"delete-button",
                   method: :delete,
                   data: { confirm: "Are you sure?" } %>
       </div>
     </div>
+
+
+
+
+
+
+
+      <div class="modal fade" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Add session</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <%= simple_form_for [ @training, training_exercise ] do |f| %>
+                <%= f.hidden_field :exercise, as: :hidden, :value => training_exercise.id %>
+                <%#= f.input :exercise, selected: f.exercise.category %>
+                <%= f.input :duration_in_minutes %>
+                <%= f.submit "Edit", class: "btn btn-primary" %>
+              <% end %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    <!--           </div>
+          <a href="#" class="btn btn-primary">Show</a>
+        </div> -->
+      </div>
+
+
+
+
+
+
+
+
+
       <% end %>
   </div>
 
@@ -55,33 +105,7 @@
               </li>
             </ul>
           </div> -->
-  <div class="modal fade" id="modal_edit_training_exercise-<%= @training_exercises %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Add session</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <%= simple_form_for [ @training, @training_exercise ] do |f| %>
-            <%= f.hidden_field :exercise, as: :hidden, :value => @training_exercise.id %>
-            <%#= f.input :exercise, selected: f.exercise.category %>
-            <%= f.input :start_at %>
-            <%= f.input :duration_in_minutes %>
-            <%= f.submit "Edit", class: "btn btn-primary" %>
-          <% end %>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-<!--           </div>
-      <a href="#" class="btn btn-primary">Show</a>
-    </div> -->
-  </div>
+
 
 
 </div>
