@@ -1,6 +1,7 @@
 <div class ="header-team">
   <div class ="filter-team">
     <div class="team-title">
+      <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
       <h1><%= @team.club_name %></h1>
       <h2><%= @team.name %></h2>
     </div>
@@ -399,9 +400,23 @@
   <div class = "col col-trainings">
     <%= render "trainings/last_five" %>
   </div>
-<!-- Button trigger modal -->
 </div>
 
+<div class ="team-players">
+    <h2> Effectif </h2>
+  <div class ="position">
+    <h3> Gardiens de but </h2>
+  </div>
+  <div class="position">
+    <h3>Défenseurs</h3>
+  </div>
+  <div class="position">
+    <h3>Milieux</h3>
+  </div>
+  <div class="position">
+    <h3>Attaquants</h3>
+  </div>
+</div>
 
 
 <!-- Modal -->
