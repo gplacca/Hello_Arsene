@@ -1,3 +1,4 @@
+
 .grid .latest-and-upcoming-fixtures__grid {
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
 font-size: 1.6rem;
@@ -35,7 +36,7 @@ font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
 box-sizing: border-box;
 display: flex;
 flex-wrap: wrap;
-width : 40%;
+width : 100%;
 }
 
 .game-promo__main{
@@ -170,6 +171,22 @@ display: flex;
 flex-direction: column;
 flex: 1 0 100px;
 white-space: nowrap;
+}
+
+.game-promo__middle-section-description{
+-webkit-tap-highlight-color: rgba(21,30,45,0.2);
+-webkit-font-smoothing: antialiased;
+text-align: center;
+box-sizing: border-box;
+margin: 0 0 11px;
+text-transform: uppercase;
+margin-top: auto;
+margin-bottom: 0;
+font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
+font-weight: bold;
+font-size: 1.2rem;
+line-height: 1.66667;
+color: #1EDD88;
 }
 
 
