@@ -12,17 +12,17 @@
       <h3 class="game-promo__heading u-text-uppercase"><span>Dernier match</span> — <time class="hide-when-js" data-abbr="true" datetime="2020-02-12 18:30" data-js-utc-time-adjust="" style="display: inline;">12 févr 2020, 19:30</time></h3>
       <div class="game-promo__body">
         <div class="game-promo__competition">
-          National 2
+          Coupe du Monde
         </div>
 
         <div class="game-promo__main">
           <p class="game-promo__location">
-            Stade Georges Carpentier, Paris
+            Stade Villa Gaudelet
           </p>
           <div class="game-promo__team">
-            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581619151/130px-FCGobelinsParis13_xvlc7e.png", alt: "alttext", width:"120px"  %>
+            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
             <p class="game-promo__team-name">
-            FC Gobelins
+            Le Wagon
             </p>
           </div>
 
@@ -38,9 +38,9 @@
           </div>
 
           <div class="game-promo__team">
-            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581619414/logo-EAG-FOND-couleur-e1559834773452-854x794_vt5kqy.png", alt: "alttext", width:"120px"  %>
+            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581772985/harvard_m4nrmt.png", alt: "Harvard", width:"120px"  %>
             <p class="game-promo__team-name">
-            EA Guingamp 2
+            Harvard
             </p>
           </div>
 
@@ -55,7 +55,7 @@
       <h3 class="game-promo__heading u-text-uppercase"><span>Prochain match</span> — <time class="hide-when-js" data-abbr="true" datetime="2020-02-15 16:30" data-js-utc-time-adjust="" style="display: inline;">15 févr 2020, 17:30</time></h3>
       <div class="game-promo__body">
         <div class="game-promo__competition">
-          National 2
+          Coupe du monde
         </div>
 
         <div class="game-promo__main">
@@ -63,9 +63,9 @@
           Stade Jacques Couvret
           </p>
           <div class="game-promo__team">
-            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581620552/1200px-Logo_C_Chartres_Football_2018.svg_lcccet.png", alt: "Logo Chartres", width:"120px"  %>
+            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581773119/MIT_m6tvsm.png", alt: "MIT", width:"120px"  %>
             <p class="game-promo__team-name">
-             C Chartres F.
+             MIT
             </p>
           </div>
 
@@ -79,9 +79,9 @@
           </div>
 
           <div class="game-promo__team">
-            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581619151/130px-FCGobelinsParis13_xvlc7e.png", alt: "alttext", width:"120px"  %>
+            <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
             <p class="game-promo__team-name">
-              FC Gobelins
+              Le Wagon
             </p>
           </div>
 
@@ -94,8 +94,308 @@
 
 
 
+<div class = "row">
+   <div class = "col">
+    <div class ="container">
+  <div class="team-hub__header">
+      Classement
+    </div>
+  <div class ="league-table">
+    <table data-js-sortable-table>
+      <thead>
+          <tr>
+            <th class="is-active sortable-table__sortable-header" scope="col" data-sortable-header-trigger="" data-inverted="">
+            <span>
+              <abbr title="Position">POS</abbr>
+            </span>
+            </th>
+            <th scope="col" class="league-table__team">
+              Équipe
+            </th>
+            <th scope="col" data-sortable-header-trigger="" class="sortable-table__sortable-header">
+              <span><abbr title="Points">Pts</abbr></span>
+            </th>
+            <th scope="col" data-sortable-header-trigger="" class="sortable-table__sortable-header">
+              <span><abbr title="Joués">J</abbr></span>
+            </th>
+            <th scope="col" data-sortable-header-trigger="" class="sortable-table__sortable-header">
+              <span><abbr title="Gagnés">G</abbr></span>
+            </th>
+            <th scope="col" data-sortable-header-trigger="" class="sortable-table__sortable-header">
+              <span><abbr title="Nuls">N</abbr></span>
+            </th>
+            <th scope="col" class="league-table__last-mobile-col sortable-table__sortable-header" data-sortable-header-trigger="">
+              <span><abbr title="Perdus">P</abbr></span>
+            </th>
+            <th scope="col" class="u-hidden-mobile sortable-table__sortable-header" data-sortable-header-trigger="">
+              <span><abbr title="Buts Pours">BP</abbr></span>
+            </th>
+            <th scope="col" class="u-hidden-mobile sortable-table__sortable-header" data-sortable-header-trigger="">
+              <span><abbr title="Buts Contre">BC</abbr></span>
+            </th>
+            <th scope="col" class="u-hidden-mobile sortable-table__sortable-header" data-sortable-header-trigger="">
+              <span><abbr title="Différence de buts">Diff.</abbr></span>
+            </th>
+          </tr>
+          </thead>
+        <tbody>
+          <tr class="league-table__row--featured league-table__row--1">
+              <td class="league-table__position is-active">
+                1
+              </td>
+              <td class="league-table__team">
+                <div class="league-table__team-inner">
+                  <div class="league-table__team-crest">
+                      <figure class="figure">
+                          <img class="image u-blur-up lazyloaded" src="https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png" alt="Le Wagon">
+                      </figure>
+                  </div>
+                  <p class="league-table__team-name">
+                    Le Wagon
+                  </p>
+                </div>
+              </td>
+              <td>
+                61
+              </td>
+              <td>
+                24
+              </td>
+              <td>
+                20
+              </td>
+              <td>
+                1
+              </td>
+              <td class="league-table__last-mobile-col">
+                3
+              </td>
+              <td class="u-hidden-mobile">
+                63
+              </td>
+              <td class="u-hidden-mobile">
+                17
+              </td>
+              <td class="u-hidden-mobile">
+                +46
+              </td>
+            </tr>
+                <tr class="league-table__row--featured league-table__row">
+              <td class="league-table__position is-active">
+                2
+              </td>
+              <td class="league-table__team">
+                <div class="league-table__team-inner">
+                  <div class="league-table__team-crest">
+                      <figure class="figure">
+                          <img class="image u-blur-up lazyloaded" src="https://res.cloudinary.com/dv7b712cp/image/upload/v1581772985/harvard_m4nrmt.png" alt="Harvard">
+                      </figure>
+                  </div>
+                  <p class="league-table__team-name-other">
+                    Harvard
+                  </p>
+                </div>
+              </td>
+              <td>
+                49
+              </td>
+              <td>
+                24
+              </td>
+              <td>
+                7
+              </td>
+              <td>
+                3
+              </td>
+              <td class="league-table__last-mobile-col">
+                3
+              </td>
+              <td class="u-hidden-mobile">
+                33
+              </td>
+              <td class="u-hidden-mobile">
+                21
+              </td>
+              <td class="u-hidden-mobile">
+                +12
+              </td>
+            </tr>
+             <tr class="league-table__row--featured league-table__row">
+              <td class="league-table__position is-active">
+                3
+              </td>
+              <td class="league-table__team">
+                <div class="league-table__team-inner">
+                  <div class="league-table__team-crest">
+                      <figure class="figure">
+                          <img class="image u-blur-up lazyloaded" src="https://res.cloudinary.com/dv7b712cp/image/upload/v1581773297/oxford_e2cw67.png" alt="Oxford">
+                      </figure>
+                  </div>
+                  <p class="league-table__team-name-other">
+                    Oxford
+                  </p>
+                </div>
+              </td>
+              <td>
+                41
+              </td>
+              <td>
+                24
+              </td>
+              <td>
+                12
+              </td>
+              <td>
+                5
+              </td>
+              <td class="league-table__last-mobile-col">
+                7
+              </td>
+              <td class="u-hidden-mobile">
+                29
+              </td>
+              <td class="u-hidden-mobile">
+                22
+              </td>
+              <td class="u-hidden-mobile">
+                +7
+              </td>
+            </tr>
+            </tr>
+             <tr class="league-table__row--featured league-table__row">
+              <td class="league-table__position is-active">
+                4
+              </td>
+              <td class="league-table__team">
+                <div class="league-table__team-inner">
+                  <div class="league-table__team-crest">
+                      <figure class="figure">
+                          <img class="image u-blur-up lazyloaded" src="https://res.cloudinary.com/dv7b712cp/image/upload/v1581773119/MIT_m6tvsm.png" alt="MIT">
+                      </figure>
+                  </div>
+                  <p class="league-table__team-name-other">
+                    MIT
+                  </p>
+                </div>
+              </td>
+              <td>
+                41
+              </td>
+              <td>
+                24
+              </td>
+              <td>
+                12
+              </td>
+              <td>
+                5
+              </td>
+              <td class="league-table__last-mobile-col">
+                7
+              </td>
+              <td class="u-hidden-mobile">
+                29
+              </td>
+              <td class="u-hidden-mobile">
+                22
+              </td>
+              <td class="u-hidden-mobile">
+                +7
+              </td>
+            </tr>
+            </tr>
+             <tr class="league-table__row--featured league-table__row">
+              <td class="league-table__position is-active">
+                5
+              </td>
+              <td class="league-table__team">
+                <div class="league-table__team-inner">
+                  <div class="league-table__team-crest">
+                      <figure class="figure">
+                          <img class="image u-blur-up lazyloaded" src="https://res.cloudinary.com/dv7b712cp/image/upload/v1581773463/HEC_Paris_dqrvf1.png" alt="HEC Paris">
+                      </figure>
+                  </div>
+                  <p class="league-table__team-name-other">
+                    HEC Paris
+                  </p>
+                </div>
+              </td>
+              <td>
+                41
+              </td>
+              <td>
+                24
+              </td>
+              <td>
+                12
+              </td>
+              <td>
+                5
+              </td>
+              <td class="league-table__last-mobile-col">
+                7
+              </td>
+              <td class="u-hidden-mobile">
+                29
+              </td>
+              <td class="u-hidden-mobile">
+                22
+              </td>
+              <td class="u-hidden-mobile">
+                +7
+              </td>
+            </tr>
+            <tr class="league-table__row--featured league-table__row">
+              <td class="league-table__position is-active">
+                6
+              </td>
+              <td class="league-table__team">
+                <div class="league-table__team-inner">
+                  <div class="league-table__team-crest">
+                      <figure class="figure">
+                          <img class="image u-blur-up lazyloaded" src="https://res.cloudinary.com/dv7b712cp/image/upload/v1581773648/tsinghua_lep1xu.png" alt="Tsinghua">
+                      </figure>
+                  </div>
+                  <p class="league-table__team-name-other">
+                    Tsinghua
+                  </p>
+                </div>
+              </td>
+              <td>
+                41
+              </td>
+              <td>
+                24
+              </td>
+              <td>
+                12
+              </td>
+              <td>
+                5
+              </td>
+              <td class="league-table__last-mobile-col">
+                7
+              </td>
+              <td class="u-hidden-mobile">
+                29
+              </td>
+              <td class="u-hidden-mobile">
+                22
+              </td>
+              <td class="u-hidden-mobile">
+                +7
+              </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+  </div>
+  <div class = "col">
 <%= render "trainings/last_five" %>
-
+  </div>
+</div>
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
