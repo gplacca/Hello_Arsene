@@ -28,6 +28,8 @@
   color: white;
   position: relative;
   text-align: center;
+  margin-top:75px;
+  padding-top:25px;
 }
 
 .team-title h1{
@@ -38,6 +40,11 @@
 .row-league{
   padding: 0px;
 }
+
+.row-team{
+  padding: 0px;
+}
+
 .grid .latest-and-upcoming-fixtures__grid {
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
   font-size: 1rem;
@@ -602,4 +609,8 @@
   font-size: inherit;
   color: #fff;
   box-sizing: border-box;
+}
+
+.col-trainings h2{
+  margin-left: 30px;
 }

@@ -1,6 +1,23 @@
 <h2>Mes dernières séances</h2>
 
 <% @last_five_trainings.each do |training| %>
-    <p><%= training.name %> <%= link_to "Modifier", edit_training_path(training.id) %> <%= link_to "Voir", training_path(training.id) %></p>
-
+    <div class ="row row-last-trainings-container">
+      <div class ="col col-trainings-name">
+        <p><%= training.name %></p>
+      </div>
+      <div class ="col col-trainings-button">
+        <button type="button" class="btn btn-outline-light">
+          <%= link_to "Modifier", edit_training_path(training.id) %>
+        </button>
+        <button type="button" class="btn btn-outline-light">
+          <%= link_to "Voir", training_path(training.id) %>
+        </button>
+      </div>
+    </div>
 <% end %>
+<div class ="button-trainings">
+  <button type="button" class="btn btn-success rounded btn-lg button-trainings" data-toggle="modal" data-target="#exampleModalCenter">
+        Créer une séance
+  </button>
+</div>
+

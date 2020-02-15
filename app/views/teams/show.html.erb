@@ -8,7 +8,7 @@
 </div>
 
 <div class="grid latest-and-upcoming-fixtures__grid">
-    <div class = "row">
+    <div class = "row row-team">
     <div class = "col">
     <section class="game-promo
       game-promo--dark
@@ -396,11 +396,8 @@
   </div>
 </div>
   </div>
-  <div class = "col">
-<%= render "trainings/last_five" %>
-<button type="button" class="btn btn-success rounded btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-  Créer une séance
-</button>
+  <div class = "col col-trainings">
+    <%= render "trainings/last_five" %>
   </div>
 <!-- Button trigger modal -->
 </div>
