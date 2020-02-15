@@ -430,17 +430,18 @@
         </button>
       </div>
       <div class="modal-body">
+        <h1>coucou</h1>
         <%= simple_form_for [@team, @training] do |f| %>
           <%= f.input :name %>
-          <%= f.input :start_at %>
+          <%= f.input :start_at, as: :string, required: false, input_html: {class: "datepicker"} %>
           <%= f.input :duration_in_minutes %>
           <%= f.submit "Create", class: "btn btn-primary" %>
         <% end %>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <!-- <div class="modal-footer"> -->
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
 <!--         <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 </div>
