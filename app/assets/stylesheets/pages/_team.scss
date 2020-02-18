@@ -37,16 +37,13 @@
   font-size: 6rem;
 }
 
-.col-league{
-  padding-left: 0px;
-}
-
 .row-league{
-  padding: 0px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .row-team{
-  padding: 0px;
+  padding: 75px;
 }
 
 .grid .latest-and-upcoming-fixtures__grid {
@@ -70,10 +67,10 @@
   font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  margin-left: 15px;
-  margin-right: 15px;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .game-promo__body {
@@ -526,6 +523,10 @@
   padding: 15px;
 }
 
+.container-league {
+  padding : 20px;
+}
+
 .league-table thead th {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -617,6 +618,11 @@
 
 .col-trainings h2{
   margin-left: 30px;
+}
+
+.button-trainings {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .team-players h2{
