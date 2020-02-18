@@ -20,7 +20,10 @@
       <div class="card-product-infos">
         <h4> <%= training_exercise.exercise.name %></h4>
         <h4><%= training_exercise.duration_in_minutes %> min</h4>
-        <h5><%= training_exercise.exercise.category%><h5>
+        <% categories = training_exercise.exercise.category%>
+        <% categories.each do | category | %>
+          <h5> <%= category %> </h5>
+          <% end %>
       </div>
   </div>
 <% end %>
