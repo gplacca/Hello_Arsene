@@ -25,7 +25,14 @@ le_wagon = Team.create!(name: "Code League", club_name: "Le Wagon FC", user: use
 
 csv_t = File.read(Rails.root.join('lib', 'exercises_3.csv'))
 csv = CSV.parse(csv_t, :headers => true, col_sep: ';')
+
 csv.each do |row|
+
+  # cat_array = row[3]
+  # p cat_array
+  # cat_array2 = cat_array.split(',')
+  # p cat_array2.class
+
   Exercise.create!(name: row[0], description: row[1], default_duration_in_minutes: row[2], category: row[3])
 end
 puts "Tu as créé des exercices"

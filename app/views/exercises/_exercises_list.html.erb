@@ -24,13 +24,14 @@
             <div class="h-100 d-flex flex-column justify-content-between">
               <div>
                 <h4><%= exercise.name %></h4>
-                <!-- <div class="d-flex">
-                  <%# exercise.category.each do |tag| %>
-                    <div class="tag">
-                      <p class="m-0"><%= tag %></p>
-                    </div>
-                  <%# end %>
-                </div> -->
+                <div class="d-flex">
+                  <div class="tag">
+                    <% categories = exercise.category.split(',') %>
+                    <% categories.each do |category| %>
+                      <p class="m-0"><%= category %> </p>
+                    <% end %>
+                  </div>
+                </div>
               </div>
             </div>
 <!--             <button type="button" class="" data-toggle="modal" data-target="#exampleModalCenter-<%= exercise.id %>">
