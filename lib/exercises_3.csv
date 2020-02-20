@@ -7,7 +7,7 @@
 Après sa passe à D, C dédouble son partenaire D. D se dribble diagonalement à gauche dans une position centrale, B ne le quitte pas. A croise dans le dos du partenaire B pour aller vers l'attaquant C. L'exercice est fini une fois que les joueurs sont arrivés dans la surface de rép.
 
  Dimensions du terrain
- 20x20 m.";20;[Phases défensives, Phases offensives, Opposition]Jeu de passes en deux carrés;"Positionnement
+ 20x20 m.";20;Phases défensives,OppositionJeu de passes en deux carrés;"Positionnement
   Prenez 8 cônes et placez un petit carre et un grand carre autour de ce premier. Chaque cône est occupe par un joueur, les cônes de depart par 2 joueurs (= 10 joueurs au total).
 (1) Changement de position
 
@@ -19,7 +19,7 @@ Au bout de quelques minutes, les joueurs peuvent echanger leurs positions de l'e
 
 Marges des cônes
 Cônes du carre exterieur: 20m.
-Cônes du carre interieur: 10m.";15;[Technique, Conservation]Garder un temps d'avance sur le défenseur;"Positionnement
+Cônes du carre interieur: 10m.";15;Technique,ConservationGarder un temps d'avance sur le défenseur;"Positionnement
   But: Marquer
 Objectif: Fixer et donner en supériorité numérique
 Joueurs: 2 c 1
@@ -30,7 +30,7 @@ Terrain: 30 X 20m
   Consignes:
 Jeu au sol obligatoire
 Obligation de passer par une porte puis transmettre au joueur cible.
-Si le défenseur récupère stop-ball  derrière la ligne de départ.";30;[Phases offensives, Jeu devant le but, Conservation]"Echauffement  - course en ""chaînes""";"Positionnement
+Si le défenseur récupère stop-ball  derrière la ligne de départ.";30;Phases offensives,Jeu devant le but"Echauffement  - course en ""chaînes""";"Positionnement
   Course en ""chaînes"" dans la formation du 4-4-2. Les joueurs sont lies l'un à l'autre par des cordes (à une distance de 7-15 m). Installez sur la ligne de touche 3 zones à l'aide des cônes de differentes couleurs (voir le dessin):
 Cônes rouges = zone du pressing defensif
 Cônes bleus = zone du pressing de milieu
@@ -43,7 +43,7 @@ Faites repartir 10 ballons (ou bien des cônes) sur le terrain comme indique sur
 
 
   Dimensions du terrain
-  Terrain integral";10;[Echauffement]Jeu de passes avec dédoublement;"Positionnement
+  Terrain integral";10;EchauffementJeu de passes avec dédoublement;"Positionnement
   Placez trois 6 cônes comme indique. Chaque cône est occupe par un joueur. Les deux joueurs places aux cônes centraux ont un ballon chacun.
 
 
@@ -53,7 +53,7 @@ Joueur C fait une passe à B, qui transfère le ballon à A et dedouble ce même
 Les groupes D, E et F empruntent les mêmes courses et lignes de passes. C'est-à-dire que F dribble, après sa course, vers la position C. Joueur D passe à la position de E et joueur E à la position de F.
 
 Dimensions du terrain
-12 x 18 m.";20;[Conservation, Technique]9 vs. 9 - débordement;"Positionnement
+12 x 18 m.";20;Conservation,Technique9 vs. 9 - débordement;"Positionnement
   18 joueurs de champ
 2 gardiens
 2/3 d'un grand terrain
@@ -63,7 +63,7 @@ Dimensions du terrain
   Sur les 2/3 du terrain évoluent deux équipes dans un 9 vs. 9 sur deux grands buts avec gardien. Le terrain est divisé en 3 zones verticales. L'équipe en possession du ballon a la tâche de construire l'attaque par une zone extérieure, d'où un ailier fait un centre ou une passe en retrait dans la surface de rép. que l'un des coéquipiers doit transformer.
 
 Dimensions du terrain
-2/3 d'un grand terrain";20;[Phases offensives, Phases défensives, Opposiiton, Tactique]4 vs. 7 - Remontée de balle;"Positionnement
+2/3 d'un grand terrain";20;Phases offensives,Opposiiton,Tactique4 vs. 7 - Remontée de balle;"Positionnement
   Placez trois buts de cônes sur la ligne mediane. Formez deux equipes. Une equipe attaquante à 7 joueurs (jaunes) et une defense à 4 joueurs (bleus) qui commence en ligne de base à 4. L'equipe jaune se positionne comme indique sur le dessin: un relanceur central, deux milieux centraux, deux ailiers et deux attaquants. Le relanceur a le ballon. Un gardien est dans le but.
 
 
@@ -78,7 +78,7 @@ Ouverture par des passes ""zigzags"" avec le moins de touches possibles. Aux cou
 5 - croisement
 6 - dedoublement
 
-Dimensions du terrain Moitie du terrain";30;[Phases offensives, Phases défensives, Opposiiton, Tactique]Enchainement contrôle passe courte;"Positionnement
+Dimensions du terrain Moitie du terrain";30;Phases offensives,Opposiiton,TactiqueEnchainement contrôle passe courte;"Positionnement
   But: Trouver les joueurs cibles en aller-retour
 Objectif: Entraînement technique au jeu court sous forme évolutive.
 Équipe: 5 c 5
@@ -90,7 +90,7 @@ Un ballon par équipe
 Interdit de lever et d’arrêter le ballon.
 Le ballon doit circuler de l’intérieur vers l’extérieur.
 Le joueur qui transmet le ballon au joueur cible prend la place de celui-ci.
--Les 2 joueurs cibles joints = 1 pt";25;[Conservation, Technique]Echauffement Passe et suit 5;"Positionnement
+-Les 2 joueurs cibles joints = 1 pt";25;Conservation,TechniqueEchauffement Passe et suit 5;"Positionnement
   2 joueurs se placent aux plots A et C avec 1 ballon.
 
 
@@ -104,7 +104,7 @@ Le joueur 1 fait un 1-2 de l'intérieur du pied droit avec le joueur 2 et va pre
 Le joueur 3 fait un 1-2 de l'intérieur du pied droit avec le joueur 4 et va prendre sa place.
 
 Dimensions du terrain
-Carré central : 4 mètres de coté.";35;[Echauffement, Technique]Jeu de passes avec tir au but, variante IV;"Positionnement
+Carré central : 4 mètres de coté.";35;Echauffement,TechniqueJeu de passes avec tir au but, variante IV;"Positionnement
  Placez trois cônes comme indique. Les cônes de depart (avec ballon) sont occupes par 2/plusieurs joueurs, les cônes centraux par 2 joueurs et le cône proche du but par 1 joueur. Le gardien est dans le but.
 
 
@@ -119,14 +119,14 @@ Alternatives:
 - Installez et utilisez un deuxième but.
 
 Dimensions du terrain
-Moitie du terrain";20;[Phases offensives, Jeu devant le but]jeu de transition avec 3 equipes;"Positionnement
+Moitie du terrain";20;Phases offensives,Jeu devant le butjeu de transition avec 3 equipes;"Positionnement
   30/30
 3 equipes de 5 joueurs
 
 
   Déroulement
   rouge garde la possession
-gris chreche la recup et passe a l appuis oppose et fait la transition vertical et garde la possession";30;[Conservation]Compétition de tirs à trois buts voisins;"Positionnement
+gris chreche la recup et passe a l appuis oppose et fait la transition vertical et garde la possession";30;ConservationCompétition de tirs à trois buts voisins;"Positionnement
   Installez trois buts l'un à côte de l'autre. Chaque but est occupe par un gardien. A 14 - 20 m de chaque but sera formee une queue de joueurs dont chacun a un ballon.
 
 
@@ -139,7 +139,7 @@ a) Competition interne entre gardiens. Qui encaisse le moins de buts? Ou competi
 b) Après chaque manche, les gardiens echangent leurs places dans les cages (dans le/en sens inverse des aiguilles). L'entraineur declenche la prochaine manche de tirs par un signe.
 
 Dimensions du terrain
-30x25 m.";15;[Jeu devant le but, Technique]Echauffement dans le système linéaire de 4-4-2;"Positionnement
+30x25 m.";15;Jeu devant le but,TechniqueEchauffement dans le système linéaire de 4-4-2;"Positionnement
   L'équipe sera placée selon la formation défensive de base 4-4-2 dans la zone de pressing défensif du terrain.
 
 
@@ -148,7 +148,7 @@ Dimensions du terrain
 Les gardiens peuvent y participer pour avoir une impression des courses d'un joueur de champ. Dès que les joueurs arrivent à la position finale, ils ne bougent plus et c'est à l'entraineur de corriger toutes les fautes. Ensuite, l'entraineur définit la démarche suivante.
 
 Dimensions du terrain
-Terrain intégral";10;[Echauffement, Tactique]3 vs. 5;"Positionnement
+Terrain intégral";10;Echauffement,Tactique3 vs. 5;"Positionnement
   Un gardien, trois defenseurs (rouges) et cinq attaquants (bleus, en possession du ballon) seront places selon la graphique sur un terrain delimite par des cônes.
 
 
@@ -156,7 +156,7 @@ Terrain intégral";10;[Echauffement, Tactique]3 vs. 5;"Positionnement
   Les attaquants appliquent differentes variantes offensives (enchainements de passes rapides, dedoublement, croisement, passes dans le couloir, dribbles, une-deux, etc.) pour se jouer des defenseurs et finir par tirer au but. Les trois defenseurs veulent les en empêcher en faisant des deplacements tactiquement intelligent et en menant des duels de facon agressive. La règle du hors-jeu sera appliquee.
 
 Marges des cônes
-10 m";20;[Phases offensives, Phases défensives, Opposiiton, Tactique]Jonglage, remise volée + tir au but;"Positionnement
+10 m";20;Phases offensives,TactiqueJonglage, remise volée + tir au but;"Positionnement
   Placez un but est à quelque distance un cône pour le ""rebondeur"" et le cône de depart pour les joueurs. Chaque joueur a son ballon. Le gardien est dans le but.
 
 
@@ -165,14 +165,14 @@ Marges des cônes
 Le joueur bleu va vers le ""rebondeur"" en jonglant le ballon 2 à 4 fois. Puis, il lui passe le ballon. Le ""rebondeur"" (rouge) lui remise le ballon de sorte que le bleu puisse faire une reprise volee pour tirer au but
 
 Dimensions du terrain
-20 x 20 m.";35;[Technique, Jeu devant le but]Centres de la ligne de touche;"Positionnement
+20 x 20 m.";35;Technique,Jeu devant le butCentres de la ligne de touche;"Positionnement
   5 joueurs, dont 3 centreurs/ailiers (qui ont les ballons) et 2 avant-centres. Le gardien est dans le but. Les centreurs sont à une distance de 25-30 m, les deux avant-centres à 16 m du but.
 
   Déroulement
   Les trois ailiers centrent vers la surface de rép. à partir de différentes positions. Les deux attaquants croisent leurs courses et essayent ensuite de transformer les centres. Le gardien essaye d'intercepter les centres, sinon il doit arrêter les tirs des attaquants. Les différentes positions des centreurs sont les suivantes:
 (1) la ligne de touche
 (2) l'interzone
-(3) la ligne de sortie de but (centres en retrait)";30;[Phases offensives, Jeu devant le but]Echauffement Passe et suit 4;"Positionnement
+(3) la ligne de sortie de but (centres en retrait)";30;Phases offensives,Jeu devant le butEchauffement Passe et suit 4;"Positionnement
 
 Déroulement
 Au signal, les joueurs 1 et 3 conduisent le ballon jusque dans le carré central.
@@ -181,7 +181,7 @@ Le joueur 3 fait une passe de l'intérieur du pied droit vers les joueur 4 et va
 On change de sens de rotation : Passe de l'intérieur du pied gauche vers la droite.
 
 Dimensions du terrain
-Carré central : 4 mètres de coté.";20;[Echauffement, Technique]Tirs au but de loin;"Positionnement
+Carré central : 4 mètres de coté.";20;Echauffement,TechniqueTirs au but de loin;"Positionnement
 Le gardien est dans le but. Plusieurs tireurs se placent avec les ballons à env. 20 m du but.
 
 
@@ -189,7 +189,7 @@ Déroulement
 Les joueurs tirent au but l'un après l'autre. Si le gardien encaisse trois buts consécutifs, il doit faire 10 pompes. Si un tireur rate trois fois de suite, il fait aussi 10 pompes.
 
 Dimensions du terrain
- 25x25 m.";25;[Jeu devant le but]2 contre 2 avec retrait défensif;"Positionnement
+ 25x25 m.";25;Jeu devant le but2 contre 2 avec retrait défensif;"Positionnement
   Cinq joueurs (y compris un gardien) sont placés sur le terrain selon le dessin. Les deux Bleus A et B sont défenseurs, les deux Rouges attaquants. Le gardien se met dans le but. Au départ, le ballon se trouve chez le joueur rouge C.
 
 
@@ -198,7 +198,7 @@ Dimensions du terrain
 Commence maintenant un 2 contre 2 avec des courses et scénarios de jeu en mutation permanente jusqu'à ce que les défenseurs parviennent à récupérer le ballon ou bien les attaquants aient tiré au but.
 
 Dimensions du terrain
-Surface de rép. doublée";30;[Phases défensives, Phases offensives, Opposition]Changement d'aile 2;"Positionnement
+Surface de rép. doublée";30;Phases défensives,OppositionChangement d'aile 2;"Positionnement
   2 buts
 20 cônes
 Bien que la graphique ne montre qu'un côte, l'exercice sera pratique des deux côtes du terrain !
@@ -212,7 +212,7 @@ Deroulement
 4) Celui-ci contrôle le ballon en pivot et fait une passe laterale vers l'aile oppose.
 5) L'ailier contrôle le ballon et fait un dribble jusqu'à la ligne de but d'où il fait un centre en retrait à l'avant-centre.
 6) Ce dernier tire au but.
-7) Le gardien de l'autre equipe relance une contre-attaque directe.";40;[Phases offensives] Courses de la défense en ligne;"Positionnement
+7) Le gardien de l'autre equipe relance une contre-attaque directe.";40;Phases offensives Courses de la défense en ligne;"Positionnement
   8 joueurs sont alignes en deux lignes (voir le dessin) dans un camp de terrain. Pour marquer les positions, on peut utiliser des cônes. Joueur E a le ballon.
 
 
@@ -224,7 +224,7 @@ E transfère le ballon à F qui fait une passe à B qui va aussi vers la ballon.
 Après avoir effectue l'ensemble des 11 lignes de passes, echangez les positions. C'est les Bleus qui vont maintenant faire les passes et les Rouges qui pratiquent le deplacement en defense.
 
 Dimensions du terrain
-36 x 30 m.";45;[Phases défensives, Tactique]Techniques de balle/de mouvement du pied;"Positionnement
+36 x 30 m.";45;Phases défensives,TactiqueTechniques de balle/de mouvement du pied;"Positionnement
   2 gardiens sont l'un en face de l'autre. Ils ont un ballon chacun. Les distances entre eux sont variables de 10 à 30 m et dependent des capacites de force de frappe/lance et de la classe d'âge.
 
 
@@ -236,7 +236,7 @@ B - 1 = Balle à mi-hauteur, 2 = se saisir du ballon, 3 = relancer le ballon
 C - 1 = Balle à ras de terre, 2 = Prise du ballon, 3 = re-rouler le ballon
 
 Dimensions du terrain
-Libre.";20;[Technique]Conservation en surnombre (Van Gaal);"Positionnement
+Libre.";20;TechniqueConservation en surnombre (Van Gaal);"Positionnement
   40/45x30, divisés en deux. Une équipe à sa zone, conservation en surnombre (8:5)
 
 
@@ -245,7 +245,7 @@ Conservation en surnombre. Défense récupère et transition def-off en transmet
 
 
 Notes
-Si une équipe garde trop le ballon, possibilité d'ajouter un défenseur.";25;[Opposition, Conservation, Tactique]Echauffement en losange : passing-décalage-pressing;"Positionnement
+Si une équipe garde trop le ballon, possibilité d'ajouter un défenseur.";25;Opposition,Conservation,TactiqueEchauffement en losange : passing-décalage-pressing;"Positionnement
   Positionnement en losange : 1/4 de l'equipe derrière chaque cône.
 
 
@@ -258,7 +258,7 @@ b. le calibrage des passes au ras-de-sol
 c. l'augmentation progressive de la vitesse en fonction de la qualite de l'execution.
 
 Dimensions du terrain
-Exercice sur 1/4 de terrain";35;[Echauffement, Technique]Une-deux avec dribble dédoublant;"Positionnement
+Exercice sur 1/4 de terrain";35;Echauffement,TechniqueUne-deux avec dribble dédoublant;"Positionnement
   Positionnez 6 cônes comme indique dans la graphique. Il est recommande d'occuper les positions exterieures par de grands cônes ou par des lances de drapeau (voir le dessin). Comme ca, les joueurs ne pourront pas sauter par-dessus, mais seront obliges de courir autour d'eux.
 Par chaque côte, 2 joueurs se mettront l'un en face de l'autre avec une distance de 10-15m entre eux. L'exercice se prête à 6 à 10 joueurs.
 
@@ -270,7 +270,7 @@ Alternative :
 L'exercice peut egalement être pratique en competition. Pour ce faire, les deux groupes commencent simultanement, comme decrit ci-dessus. Ce groupe, dont le joueur rejoindra le groupe adverse le premier, obtiendra un point. L'equipe avec la plupart de points sera gagnante.
 
 Dimensions du terrain
-20 x 20 m.";40;[Phases offensives, Tactique, Opposition]Echauffement en 4-4-2 linéaie, avec ballons;"Positionnement
+20 x 20 m.";40;Phases offensives,Tactique,OppositionEchauffement en 4-4-2 linéaie, avec ballons;"Positionnement
   L'equipe sera placee selon la formation defensive de base 4-4-2 dans la zone de pressing defensif du terrain.
 Installez sur la ligne de touche 3 zones à l'aide des cônes de differentes couleurs (voir le dessin):
 Cônes rouges = zone du pressing defensif
@@ -282,7 +282,7 @@ Deroulement
 Realisation des courses concernant toute l'equipe comme dans l'exercice precedent. A la seule exception qu'il y a ici des ballons (ou des cônes) numerotes qui sont distribues sur le terrain. L'entraineur crie un numero et toute l'equipe se deplace vers le ballon/cône correspondant.
 Dès que les joueurs arrivent à la position finale, ils ne bougent plus et c'est à l'entraineur de corriger toutes les fautes. Ensuite, l'entraineur crie un nouveau numero, etc...
 
- Dimensions du terrain";40;[Echauffement, Tactique]Jeux de frappes en série;"Positionnement
+ Dimensions du terrain";40;Echauffement,TactiqueJeux de frappes en série;"Positionnement
   1 GARDIEN
 DEUX PASSEUR DE CHAQUE COTE DU BUT
 2 GROUPE DE JOUEURS ( 2 EQUIPE)
@@ -292,7 +292,7 @@ DEUX PASSEUR DE CHAQUE COTE DU BUT
   Apres avoir reçu un ballon aérien du passeur qui se trouve sur le coté du but, le joueur reprend le ballon de volé, et va cherché sont ballon en courant pour continuez a alimenté les passeurs
 
 Dimensions du terrain
-15 m de largeur 20 de profondeur";25;[Jeu devant le but]Centre + action ultérieure (tir au but);"Positionnement
+15 m de largeur 20 de profondeur";25;Jeu devant le butCentre + action ultérieure (tir au but);"Positionnement
   Le gardien se met dans le but. Un/plusieurs joueurs (attaquants) prennent une position centrale devant le but à hauteur de la surface de rep. L'entraineur du gardien/ou bien un ailiers est place près de la ligne de touche à hauteur de la surface de rep. (voir le dessin)
 
 
@@ -303,7 +303,7 @@ Option 1: Le gardien quitte sa position d'origine pour intercepter la balle.
 Option 2: Le gardien n'arrive pas à atteindre le centre, il reste dans son but pour plonger derrière la reprise volee de l'attaquant.
 
 Dimensions du terrain
-50x25 m.";35;[Phases offensives, Jeu devant le but]Entraînement de passes au gardien;"Positionnement
+50x25 m.";35;Phases offensives,Jeu devant le butEntraînement de passes au gardien;"Positionnement
   Les joueurs à gauche/droite du limite de la surface de rep. ont un ballon chacun. Le gardien est place devant son but, les autres joueurs comme indique sur le dessin. Le joueur de pressing se trouve à hauteur de la surface de rep., l'autre gardien sur la ligne mediane.
 
 
@@ -314,7 +314,7 @@ Dimensions du terrain
 Le même exercice se fait dans les deux sens, en partant de la droite et de la gauche.
 
 Dimensions du terrain
-Moitie du terrain.";30;[Phases défensives, Technique]Tirs après passage entre piquets;"Positionnement
+Moitie du terrain.";30;Phases défensives,TechniqueTirs après passage entre piquets;"Positionnement
   Installez un parcours se composant de cônes/cerceaux/piquets/buts selon le dessin. Les gardiens prennent une position à la ligne de sortie de but, l'entraineur au point de penalty.
 
 
@@ -322,7 +322,7 @@ Deroulement
 Les gardiens absolvent le parcours qui les mène par dessus des piquets et des cerceaux (par sauts croises) poses au sol. S'ensuit un tir au but. Puis, le gardien doit degager le ballon du pied/de la main à partir du mouvement pour l'envoyer vers une cible/un autre but predefinis.
 
 Dimensions du terrain
-Moitie du terrain";30;[¨Phases offensives, Prépa physique, Jeu devant le but]ParCourses de la défense en ligne à 4 avec 4 joueurs + 1 passeur;"Positionnement
+Moitie du terrain";30;Prépa physique,Jeu devant le butParCourses de la défense en ligne à 4 avec 4 joueurs + 1 passeur;"Positionnement
   4 joueurs sont alignes en une ligne (voir le dessin) à la hauteur de la surface de rep. Pour marquer les positions, on peut utiliser des cônes. Le passeur a le ballon et se positionne à l'arc en cercle.
 
 
@@ -336,7 +336,7 @@ Dimensions du terrain
 36 x 30 m.
 
 Marges des cônes
-En largeur: 10-12 m.";10;[Phases défensives]Tirs au but avec remise du côte;"Positionnement
+En largeur: 10-12 m.";10;Phases défensivesTirs au but avec remise du côte;"Positionnement
   Le gardien se met dans le but. Installez un cône de depart. Un joueur (le dit ""rebondeur) se positionne à côte du but. Les autres joueurs ont un ballon chacun et se placent au cône de depart à 16-22 m du but.
 
 
@@ -349,7 +349,7 @@ Variantes:
 4. Mode de competition: chacun compte ses buts inscrits. Pour cette variante, le rebondeur peut quitter sa position initiale pour profiter eventuellement d'un deuxième tir (si le gardien fait repousser).
 
 Dimensions du terrain
-25 x 20 m";20;[Jeu devant le but]Ligne à 4 - déplacement à droite avec retrait défensif;"Positionnement
+25 x 20 m";20;Jeu devant le butLigne à 4 - déplacement à droite avec retrait défensif;"Positionnement
   Les cinq défenseurs bleus A, B, C, D et X (les 4 rouges E, F, G et H = attaquants) se déplacent de leurs positions initiales respectives vers les positions finales comme indiquées sur le dessin. E est en possession du ballon.
 
 
@@ -360,7 +360,7 @@ Formation/courses optionnelle(s):
 Se déplacer/replier dès que le joueur adverse E fait une ouverture vers l'aile gauche à F et si les deux attaquants G et H se trouvent près du but. Dans ce cas, défenseur D se replie jusqu'au deuxième poteau, à hauteur égale avec C, C prend marquage de H et B marque l'attaquant G. A va vers le joueur en possession du ballon F pour le harceler.
 
 Dimensions du terrain
-Moitié du terrain";15;[Tactique, Opposition]Construction du jeu;"Positionnement
+Moitié du terrain";15;Tactique,OppositionConstruction du jeu;"Positionnement
   Version reduite d'un 11 vs. 11
 1. variante: sans adversaires
 2. variante: avec des adversaires
@@ -373,7 +373,7 @@ Moitié du terrain";15;[Tactique, Opposition]Construction du jeu;"Positionnemen
 4. Le DC contrôle le ballon et le passe au milieu lateral (ML) près du ballon
 5. Ce dernier prend le ballon vers le milieu et passe au milieu defensif (MD) qui va vers lui
 6. Le MD joue dans la foulee du DL - dans le cas d'une perte du ballon, le ML prend la position du DL
-7. passe à ras de terre appuyee vers le milieu";20;[Phases offensives, Tactique]Tir au but à partir d'un jeu de passes;"Positionnement
+7. passe à ras de terre appuyee vers le milieu";20;Phases offensives,TactiqueTir au but à partir d'un jeu de passes;"Positionnement
   Installez trois piquets et deux cônes de departs selon le dessin. Les joueurs se repartent regulièrement aux deux cônes. Groupe A a les ballons. Le gardien est dans le but.
 
 
@@ -381,12 +381,12 @@ Moitié du terrain";15;[Tactique, Opposition]Construction du jeu;"Positionnemen
   Joueur A commence son dribble au cône de depart en direction des deux piquets les plus proches. En même temps, joueur B commence sa course le long du piquet. Arrives aux deux piquets, A fait une passe en profondeur que B doit rattraper en pleine course. Puis, B tire au but, soit directement, soit après avoir contrôle le ballon. Faites echanger les positions après chaque manche.
 
 Dimensions du terrain
-35x25 m.";25;[Phases offensives, Jeu devant le but]Conservation de balle avec appuis;"Positionnement
+35x25 m.";25;Phases offensives,Jeu devant le butConservation de balle avec appuis;"Positionnement
   3 équipes, deux jouent la conservation et la 3ème reste en appui.
 
 
 Déroulement
-A la récupération, l'équipe perd le ballon passe en appui et celle qui était dehors travaille pour prendre le ballon.";35;[Conservation]Exercice complexe 2;"Positionnement
+A la récupération, l'équipe perd le ballon passe en appui et celle qui était dehors travaille pour prendre le ballon.";35;ConservationExercice complexe 2;"Positionnement
   1 gardien
 2 attaquants
 1 but
@@ -403,17 +403,17 @@ A la récupération, l'équipe perd le ballon passe en appui et celle qui était
 6) C tire directement au but ou après avoir contrôle le ballon.
 
 Dimensions du terrain
-Selon la classe d'âge des joueurs";30;[Jeu devant le but]Echauffement / Conclusion 4;"Positionnement
+Selon la classe d'âge des joueurs";30;Jeu devant le butEchauffement / Conclusion 4;"Positionnement
   Mat
 
 
   Déroulement
-  Les joueurs sont réunis au centre";25;[Echauffement]7 vs. 2 avec contournement;"Positionnement
+  Les joueurs sont réunis au centre";25;Echauffement7 vs. 2 avec contournement;"Positionnement
   Positionnez-vous en cercle d'un diamètre de 20 m. 7 joueurs exterieurs, 2 joueurs interieurs.
 
 
   Deroulement
-  Placez les 7 joueurs aux cônes exterieurs, il y aura un jeu 7 vs. 2 en cercle. Après chaque passe, le joueur exterieur respectif doit ""contourner"" son cône avant de pouvoir rentrer en jeu. Celui qui fait son tour trop tard, quand la prochaine passe dejà arrive, doit aller au milieu.";30;[Phases offensives]Jeu de finition;"Positionnement
+  Placez les 7 joueurs aux cônes exterieurs, il y aura un jeu 7 vs. 2 en cercle. Après chaque passe, le joueur exterieur respectif doit ""contourner"" son cône avant de pouvoir rentrer en jeu. Celui qui fait son tour trop tard, quand la prochaine passe dejà arrive, doit aller au milieu.";30;Phases offensivesJeu de finition;"Positionnement
   1 gardien
 1 appui de chaque coté du but qui sont dans la meme équipe que ceux qui attaque
 2 équipe en 3 contre 3
@@ -431,7 +431,7 @@ a la fin de l'exercice l'équipe qui a gagné est celle qui le meilleur score...
 ps: suvre le schema par rapport aux chiffres sachant que le 1 est la première action et le 5 la dernière suivre dans l 'ordre pour la compréhension de l'exercice et faite évolué par la suite en suivant les consignes du déroulement
 
 Dimensions du terrain
-18m de largeur x 30m de profondeur réadapté les distances en fonction du public accueilli";40;[Phases offensives, Jeu devant le but]Une-deux en formation de triangle;"Positionnement
+18m de largeur x 30m de profondeur réadapté les distances en fonction du public accueilli";40;Phases offensives,Jeu devant le butUne-deux en formation de triangle;"Positionnement
   Placez trois 3 cônes comme indique. Le cône de depart est occupe par deux (resp. plusieurs) joueurs qui possèdent le ballon. Les cônes restants sont occupes par un joueur chacun.
 
 
@@ -447,7 +447,7 @@ Alternative:
 Après la moitie du temps, l'exercice va se derouler en sens inverse des aiguilles.
 
 Dimensions du terrain
-12 x 12 m.";45;[Technique, Tactique, Phases offensives]Acrobatie avant finition;"Positionnement
+12 x 12 m.";45;Technique,Tactique,Phases offensivesAcrobatie avant finition;"Positionnement
   Installez un parcours de cônes à côte du but. Le gardien est place au cône le plus loin du but, son entraineur (EG) à une distance de 14 - 22 m (variable selon la classe d'âge), en position centrale devant le but. L'EG a les ballons.
 
 
@@ -460,7 +460,7 @@ Deroulement:
 3 - Balle tiree/lancee par l'EG
 
 Dimensions du terrain
-25x20 m.";30;[Prépa physique, Jeu devant le but]Echauffement en 4-4-2 linéaire, avec losange et ballons;"Positionnement
+25x20 m.";30;Prépa physique,Jeu devant le butEchauffement en 4-4-2 linéaire, avec losange et ballons;"Positionnement
   L'equipe sera placee selon la formation defensive ""losange"" en 4-4-2 dans la zone de pressing defensif du terrain.
 Installez sur la ligne de touche 3 zones à l'aide de cônes de differentes couleurs (voir le dessin):
 Cônes rouges = zone du pressing defensif
@@ -473,7 +473,7 @@ Deroulement
 Realisation des courses orientees aux ballons/cônes à travers le terrain integral et pratiquees en formation de ""losange"" . Il y a encore des ballons (ou des cônes) numerotes qui sont distribues sur le terrain. L'entraineur crie un numero et toute l'equipe se deplace vers le ballon/cône correspondant. En defense, le losange se transforme souvent en ligne à 3 (avec un milieu offensif devant cette ligne). Ce milieu offensif occupe et assure l'inter-espace entre defense et attaque.
 
 Dimensions du terrain
-Terrain integral";25;[Echauffement, Tactique]Exercice complexe 3;"Positionnement
+Terrain integral";25;Echauffement,TactiqueExercice complexe 3;"Positionnement
   1 Gardien
 1 Defenseur
 2 Attaquants
@@ -490,7 +490,7 @@ Deroulement
 Après l'attaque, chaque joueur passe à la prochaine position (à l'exception du centreur).
 
 Marges des cônes
-Selon les capacites et la classe d'âge des joueurs";20;[Phases offensives, Jeu devant le but]11:0 Dragani;"Positionnement
+Selon les capacites et la classe d'âge des joueurs";20;Phases offensives,Jeu devant le but11:0 Dragani;"Positionnement
   Placer l'équipe-type en donnant des casaques de couleurs différents aux défenseurs-milieux-attaquants.
 Pas d'adversaire ou alors passifs.
 
@@ -499,7 +499,7 @@ Déroulement
 Variantes de 4 à 6 minutes.
 1. Circulation de balle en simulant des phases de construction REELLES, avec rythme et déplacements des joueurs ""comme en match"".
 2. Obligation de transmettre le ballon à un joueur portant une autre casaque. Insister sur certains déplacements (voir animations).
-3. Au signal du coach, déclenchement d'une action de jeu. Le coach peut aussi demander une action précise (dédoublement latéral, jeu long ou passage par un des ""8"".";20;[Conservation, Tactique]Construction du jeu à partir de la défense en ligne à 4;"Positionnement
+3. Au signal du coach, déclenchement d'une action de jeu. Le coach peut aussi demander une action précise (dédoublement latéral, jeu long ou passage par un des ""8"".";20;Conservation,TactiqueConstruction du jeu à partir de la défense en ligne à 4;"Positionnement
   Terrain integral
 
 
@@ -507,7 +507,7 @@ Deroulement
 Le gardien degage du pied/de la main vers un defenseur central de la ligne à 4 qui fait une passe appuyee à ras de terre au defenseur lateral (2). Celui-ci doit pousser le ballon en avant en cherchant des yeux l'un des attaquants à qui il fait finalement une passe à ras de terre. EN MEME TEMPS, l'ailier de ce côte du terrain demarre en vitesse! L'attaquant sollicite fait rebondir pour le milieu recuperateur (6) qui fait une passe longue dans la foulee de l'ailier qui recevra la balle au coin de la surface de rep. en position libre. Les deux attaquants croisent et remontent le terrain vers le but adverse, ainsi que le milieu recup. et le meneur de jeu (10).
 1. Deroulement lent en etudiant les course et les lignes de passes
 2. Deroulement au rythme accelere une fois que les lignes de passes ont ete interiorisees par les joueurs
-3. Comme 2., en plus de quelques joueurs adverses";25;[Phases offensives, Conservation]Renvois de but;"Positionnement
+3. Comme 2., en plus de quelques joueurs adverses";25;Phases offensives,ConservationRenvois de but;"Positionnement
   Chaque but est occupe par un gardien. Les ballons sont repartis aux differents buts.
 
 
@@ -519,7 +519,7 @@ Les gardiens se font des degagements de but d'un côte à l'autre (renvoi de but
 
 
 Dimensions du terrain
-Moitie du terrain ou terrain integral (selon la classe d'âge)";35;[Technique]3 vs. 3 + gardiens;"Positionnement
+Moitie du terrain ou terrain integral (selon la classe d'âge)";35;Technique3 vs. 3 + gardiens;"Positionnement
   Chaque équipe se compose de 3 joueurs + gardien et occupe un camp du terrain délimité. Les ballons se trouvent dans les deux buts.
 
 
@@ -527,7 +527,7 @@ Moitie du terrain ou terrain integral (selon la classe d'âge)";35;[Technique]3
   Les deux équipes jouent 3 contre 3 + gardiens. Leur objectif est de s'engager à fond pendant 2 minutes et de marquer ainsi que d'éviter d'encaisser des buts. Au bout de 2 minutes, les joueurs de champ seront relayés.
 
 Dimensions du terrain
- 32x32 m.";30;[Opposition, Jeu devant le but]Centres en provenance de l'interzone;"Positionnement
+ 32x32 m.";30;Opposition,Jeu devant le butCentres en provenance de l'interzone;"Positionnement
   5 joueurs, dont 3 centreurs/ailiers (qui ont les ballons) et 2 avant-centres. Le gardien est dans le but. Les centreurs sont à une distance de 25-30 m, les deux avant-centres à 16 m du but.
 
 
@@ -535,7 +535,7 @@ Dimensions du terrain
   Les trois ailiers centrent vers la surface de rép. à partir de différentes positions. Les deux attaquants croisent leurs courses et essayent ensuite de transformer les centres. Le gardien essaye d'intercepter les centres, sinon il doit arrêter les reprises directes des attaquants. Les différentes positions des centreurs sont les suivantes:
 (1) la ligne de touche
 (2) l'interzone
-(3) la ligne de sortie de but (centres en retrait)";20;[Phases offensives, Jeu devant le but]4 défenseurs + 1 milieu central vs. 7 attaquants;"Positionnement
+(3) la ligne de sortie de but (centres en retrait)";20;Phases offensives,Jeu devant le but4 défenseurs + 1 milieu central vs. 7 attaquants;"Positionnement
   On joue sur la moitié du terrain 5 vs. 7 à deux buts. Le deuxième but est placé sur la ligne médiane. L'équipe bleue se présente en défense en ligne à 4 de base plus un milieu central devant la défense.
 L'équipe jaune se positionne comme indiqué sur le dessin: un relanceur central, deux milieux centraux, deux ailiers et deux attaquants. Un gardien est dans chaque but respectif. Les ballons se trouvent dans le but des Jaunes.
 
@@ -546,4 +546,4 @@ Si les Jaunes marquent ou le ballon fait touche, le jeu redémarre à la ligne m
 Ouverture par des passes ""zigzags"" avec le moins de touches possibles. Aux couloirs, il y aura des duels 1 contre 1 et du dédoublement. Les ailiers sont placés aux couloirs, après une passe, ils dribblent pourtant vers l'intérieur ou un défenseur les suit. Faites toujours des passes diagonales pour renverser le jeu et pour faire bouger la défense. Les avant-centres vont constamment vers les passeurs, changent vite de direction et croisent.
 
 Dimensions du terrain
-Moitié du terrain";25;[Phases offensives, Conservation]
+Moitié du terrain";25;Phases offensives,Conservation

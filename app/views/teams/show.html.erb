@@ -407,19 +407,28 @@
   </div>
 </div>
 
-<div class ="team-players">
-    <h2> Effectif </h2>
-  <div class ="position">
-    <h3> Gardiens de but </h2>
-  </div>
-  <div class="position">
-    <h3>Défenseurs</h3>
-  </div>
-  <div class="position">
-    <h3>Milieux</h3>
-  </div>
-  <div class="position">
-    <h3>Attaquants</h3>
+<div class="container mb-5 pb-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <div class ="team-players">
+          <% @players.each do |player| %>
+          <div class="col-3 py-3">
+              <div class="h-100 d-flex flex-column justify-content-between">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="..." alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"> <%= player.first_name %> </h5>
+                    <h3 class="card-title"> <%= player.last_name %></h3>
+                    <p class="card-text"> <%= player.post %></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
