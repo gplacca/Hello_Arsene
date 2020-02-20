@@ -1,4 +1,7 @@
 // Specific CSS for your home-page
+body.pages-home{
+  background-color: #333333;
+}
 .home {
   position: absolute;
   top:0;
@@ -63,7 +66,7 @@
     padding-top: 40px;
     padding-bottom: 0;
     text-align: center;
-    background-color: white;
+    background-color: #333333;
 }
 
 .references h3{
