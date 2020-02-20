@@ -16,14 +16,14 @@
         <div class="card-training-infos">
           <h2> Information de l'entrainement</h2>
           <h3><%= @training.name %></h3>
-          <h3><%= @training.start_at %></h3>
+          <h3>Date : <%= @training.start_at %></h3>
           <h3>Durée de la séance : <%= @training.duration_in_minutes %>min</h3>
         </div>
       </div>
     </div>
   <div class ="col">
       <div class="training-header">
-        <h3> Mon planning d'entrainement</h3>
+        <h3> Ma sélection d'exercices</h3>
       </div>
       <% @training_exercises.each do |training_exercise| %>
         <div class="card-product">

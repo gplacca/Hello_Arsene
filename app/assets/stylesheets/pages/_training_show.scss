@@ -79,6 +79,8 @@
   color:white;
   padding: 30px;
   transform: skewY(-4deg);
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 body.trainings-show {
@@ -105,12 +107,15 @@ body.trainings-show {
   font-size: 24px;
   font-weight: bold;
   margin: 20px;
+  border: 1px solid #1EDD88;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .card-training h3 {
   font-size: 20px;
   font-weight: bold;
-  margin: 0;
+  margin: 20px;
 }
 
 .card-training h4 {
