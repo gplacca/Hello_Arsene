@@ -1,6 +1,6 @@
-<div class="container-fluid bg-darkgray pb-2 pt-3">
+<div class="container-fluid bg-darkgray pb-1 pt-1">
   <h5 class="text-center text-white"> <%= @training.name %> </h5>
-  <div class="row justify-content-center pt-3">
+  <div class="row justify-content-center pt-1">
     <div class="col col-lg-2 text-center text-white">
       <h5> <%= @training.start_at %></h5>
     </div>
@@ -23,7 +23,6 @@
   </div>
   <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %>
 </div>
-
 
 <div class="container">
   <div class="cards d-flex flex-row flex-wrap justify-content-start align-items-start">
