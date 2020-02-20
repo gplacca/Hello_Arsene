@@ -1,15 +1,12 @@
-.cards {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+// .cards {
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
 
 .card-training-exercise {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.footballreach.com/community/uploads/monthly_2017_08/Footballs.jpg.2396e66e5c22e021727920770799423c.jpg);
-  background-size: contain;
-  width: 250px;
-  color: #fff;
-  height: 150px;
-  margin: 6px 6px 6px 6px;
+  background-color: #222222;
+  border-radius: 4px;
+  padding: 0px 10px 10px;
 }
 
 .card-training-exercise h3 {
@@ -18,12 +15,12 @@
   font-size: 14px;
 }
 
-.card-training-exercise h5 {
-  margin-left: 6px;
-  margin-bottom: 6px;
-  color: white;
-  font-size: 13px;
-}
+// .card-training-exercise h5 {
+//   margin-left: 6px;
+//   margin-bottom: 6px;
+//   color: white;
+//   font-size: 13px;
+// }
 
 .card-training-exercise p {
   margin-top: 16px;
@@ -31,27 +28,27 @@
   font-size: 12px;
 }
 
-.edit-button {
-  background-color: #1EDD8880;
-  text-align: center;
-  vertical-align: middle;
-  width: 60px;
-  height: 30px;
-  color: #333333;
-  border: none;
-  margin: 3px;
-}
+// .edit-button {
+//   background-color: #1EDD8880;
+//   text-align: center;
+//   vertical-align: middle;
+//   width: 60px;
+//   height: 30px;
+//   color: #333333;
+//   border: none;
+//   margin: 3px;
+// }
 
-.delete-button {
-  background-color: #84142d80;
-  padding-top: 2px;
-  text-align: center;
-  vertical-align: middle;
-  width: 60px;
-  height: 30px;
-  color: #ffffff;
-  border: none;
-  margin: 3px;
-}
+// .delete-button {
+//   background-color: #84142d80;
+//   padding-top: 2px;
+//   text-align: center;
+//   vertical-align: middle;
+//   width: 60px;
+//   height: 30px;
+//   color: #ffffff;
+//   border: none;
+//   margin: 3px;
+// }
 
 
