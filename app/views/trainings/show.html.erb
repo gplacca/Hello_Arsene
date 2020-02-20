@@ -18,6 +18,10 @@
           <h3><%= @training.name %></h3>
           <h3>Date : <%= @training.start_at %></h3>
           <h3>Durée de la séance : <%= @training.duration_in_minutes %>min</h3>
+           <h3>Liste des joueurs à convoquer :</h3>
+          <% @players.each do |player| %>
+              <h4> <%= player.number%> - <%= player.first_name %> <%= player.last_name %> </h4>
+              <% end %>
         </div>
       </div>
     </div>
