@@ -1,8 +1,46 @@
-<h1>La redirection marche</h1>
 
-<% @training_exercises.each do |training_exercise| %>
-  <h5> <%= training_exercise.exercise.name %></h1>
-  <h6> <%= training_exercise.duration_in_minutes %> </h6>
-<% end %>
+<div class ="header-team">
+  <div class ="filter-team">
+    <div class="team-title">
+      <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
+      <h2><%= @training.name %></h2>
+      <h2><%= @training.start_at %></h2>
+    </div>
+  </div>
+</div>
 
-<%= link_to "Edit", edit_training_path(@training.id) %>
+<div class = "training-container">
+  <div class = "row row-training">
+    <div class ="col">
+      <div class="card-training">
+        <div class="card-training-infos">
+          <h2> Information de l'entrainement</h2>
+          <h3><%= @training.name %></h3>
+          <h3>Date : <%= @training.start_at %></h3>
+          <h3>Durée de la séance : <%= @training.duration_in_minutes %>min</h3>
+        </div>
+      </div>
+    </div>
+  <div class ="col">
+      <div class="training-header">
+        <h3> Ma sélection d'exercices</h3>
+      </div>
+      <% @training_exercises.each do |training_exercise| %>
+        <div class="card-product">
+          <img src="https://res.cloudinary.com/dv7b712cp/image/upload/v1582055218/image_entrainement_yi7gwg.jpg" />
+            <div class="card-product-infos">
+              <h3> <%= training_exercise.exercise.name %></h3>
+              <h3><%= training_exercise.duration_in_minutes %> min</h3>
+              <% categories = training_exercise.exercise.category.split(',')%>
+              <% categories.each do | category | %>
+                <h5> <%= category %> </h5>
+                <% end %>
+            </div>
+        </div>
+        <% end %>
+        <div class="button-training-2">
+          <%= link_to "Edit", edit_training_path(@training.id), class:"btn btn-success rounded btn-lg" %>
+       </div>
+    </div>
+  </div>
+</div>
