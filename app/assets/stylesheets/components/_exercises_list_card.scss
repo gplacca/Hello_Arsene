@@ -134,3 +134,77 @@ body.trainings-edit {
   padding-right: 6px;
 }
 
+.card-exercise-details {
+  overflow: hidden;
+  height: 120px;
+  width: 500px;
+  margin: 20px;
+  background: #3e3e3e;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-right: 16px;
+}
+
+.card-exercise-details:hover {
+  background: linear-gradient(to bottom right, #525252, #333333);
+}
+
+.card-exercise-image {
+  overflow: hidden;
+}
+
+
+.card-exercise-details img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  filter: grayscale(.8);
+  transition: all 0.5s ease-in-out;
+  transform-origin: 50%;
+  object-position: center;
+  margin-right: 25px;
+}
+
+.card-exercise-details:hover img {
+  filter: grayscale(0);
+  height: 104%;
+  // transform: scale3d(1.03, 1.03, 1.03);
+  transform-origin: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-exercise-details h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #dfd3d3;
+}
+
+.card-exercise-details p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-exercise-details .card-exercise-infos {
+  text-align: left;
+  width: 360px;
+}
+
+
+.progress-bar-container {
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    justify-content: center;
+
+    margin-bottom: 4em;
+}
+
+

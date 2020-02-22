@@ -33,7 +33,7 @@ csv.each do |row|
   # cat_array2 = cat_array.split(',')
   # p cat_array2.class
 
-  Exercise.create!(name: row[0], description: row[1], default_duration_in_minutes: row[2], category: row[3])
+  Exercise.create!(name: row[0], description: row[1], default_duration_in_minutes: row[2], category: row[3], picture: row[4], video: row[5])
 end
 puts "Tu as créé des exercices"
 
