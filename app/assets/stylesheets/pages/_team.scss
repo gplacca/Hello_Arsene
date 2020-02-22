@@ -46,22 +46,29 @@ body.teams-show{
   background: rgba(0, 0, 0, 0.5);
 }
 
+.teams-show {
+  background: #333333;
+}
+
 .team-title {
   color: white;
   position: relative;
   text-align: center;
-  margin-top:75px;
-  padding-top:25px;
+  margin-top: 50px;
+  padding-top: 25px;
 }
 
 .team-title h1{
   color: white;
   font-size: 6rem;
+  margin-top:0px;
 }
 
 .row-league{
   padding-left: 75px;
   padding-right: 75px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .row-team{
@@ -86,7 +93,7 @@ body.teams-show{
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
   font-size: 1.6rem;
   line-height: 1.875;
-  color: #151e2d;
+  color: white,;
   font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -100,7 +107,7 @@ body.teams-show{
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
   font-size: 1.6rem;
   line-height: 1.875;
-  color: #151e2d;
+  color: white;
   font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -128,8 +135,27 @@ body.teams-show{
   padding-top: 30px;
   padding-bottom: 30px;
   flex-wrap: wrap;
+  background: linear-gradient(to bottom right, #525252, #333333);
+  box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
   color: #fff;
-  background: #3e3e3e;
+}
+
+.game-promo__main-next {
+  -webkit-tap-highlight-color: rgba(21,30,45,0.2);
+  font-size: 1.6rem;
+  line-height: 1.875;
+  font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  padding: 20px 20px 17px;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  background: #555555;
   box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
 }
 
@@ -151,6 +177,7 @@ body.teams-show{
   font-size: 1.2rem;
   line-height: 1.25;
   width: 60%;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
 }
 
 .game-promo__location {
@@ -264,6 +291,19 @@ body.teams-show{
   color: #1EDD88;
 }
 
+.game-promo__vs{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team-hub__header {
+  color: white;
+}
+
+.team-hub__header h2{
+  margin-bottom: 20px;
+}
+
 .league-table {
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
   font-size: 1.6rem;
@@ -273,6 +313,7 @@ body.teams-show{
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   clear: both;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
 }
 
 .league-table__content {
@@ -339,8 +380,10 @@ body.teams-show{
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 1.5%;
-  color: #151e2d;
+  color: white;
+  background: #555555;
 }
+
 
 .league-table__team {
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
@@ -394,6 +437,7 @@ body.teams-show{
   box-sizing: border-box;
   margin-top: 0;
   margin-bottom: 0px;
+  color: white;
 }
 
 .league-table__team-inner {
@@ -476,7 +520,7 @@ body.teams-show{
   box-sizing: border-box;
   border: none;
   font-size: 0.8rem;
-  background: #f4f4f4;
+  background: #555555;
 }
 
 .league-table__row--featured.league-table__row td{
@@ -495,9 +539,10 @@ body.teams-show{
   transition: color 0.2s;
   padding-top: 22px;
   padding-bottom: 22px;
-  background: white;
-  color: #333333;
+  background: #555555;
+  color: white;
 }
+
 
 .figure{
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
@@ -561,13 +606,14 @@ body.teams-show{
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
   font-size: 0.8rem;
   line-height: 1.875;
-  color: #151e2d;
+  color: white;
   font-family: "Unica77-LL-TT",Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   border-collapse: collapse !important;
   text-align: left;
   border-spacing: 0;
   box-sizing: border-box;
+  background: #555555;
 }
 
 .league-table__position .is-active{
@@ -646,11 +692,18 @@ body.teams-show{
 
 .col-trainings h2{
   margin-left: 30px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.col-trainings p{
+  margin-bottom: 0px;
 }
 
 .button-trainings {
   text-align: center;
   margin-top: 20px;
+  border-radius: 4px;
 }
 
 .team-players h2{
