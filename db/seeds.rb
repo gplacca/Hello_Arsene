@@ -40,7 +40,7 @@ puts "Tu as créé des exercices"
 csv_players = File.read(Rails.root.join('lib', 'players.csv'))
 csv_p = CSV.parse(csv_players, :headers => true, col_sep: ';')
 csv_p.each do |row|
-  Player.create!(first_name: row[0], last_name: row[1], post: row[2], number: row[3], team: le_wagon)
+  Player.create!(first_name: row[0], last_name: row[1], post: row[2], number: row[3], team: le_wagon, picture: row[4])
 end
 puts "Tu as créé des joueurs"
 
