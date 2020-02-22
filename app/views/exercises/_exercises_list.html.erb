@@ -1,68 +1,58 @@
 <nav class="navbar navbar-light bg-light">
-
-  <form class="form-inline" action="/trainings/<%= @training.id %>/edit" method="get" >
-    <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search" id="exercises_list">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-
-    <form class="form-inline" action="/trainings/<%= @training.id %>/edit" method="get" >
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Phases offensives</button>
+  <form class=“form-inline” action=“/trainings/<%= @training.id %>/edit” method=“get” >
+    <input class=“form-control mr-sm-2” name=“search” type=“search” placeholder=“Search” aria-label=“Search” id=“exercises_list”>
+    <button class=“btn btn-outline-success my-2 my-sm-0” type=“submit”>Search</button>
+    <form class=“form-inline” action=“/trainings/<%= @training.id %>/edit” method=“get” >
+      <button class=“btn btn-outline-success my-2 my-sm-0" type=“submit”>Phases offensives</button>
     </form>
   </form>
 </nav>
-<div>
-<div class="container mb-5 pb-5">
-  <div class="row">
-    <div class="col-12">
-      <div class="d-flex flex-wrap">
+<div class=“container mb-5 pb-5">
+  <div class=“row”>
+    <div class=“col-12">
+      <div class=“d-flex flex-wrap”>
         <% @exercises.each do |exercise| %>
-        <div class="card-exercise-details" data-toggle="modal" data-target="#exampleModalCenter-<%= exercise.id %>">
-          <div class="h-100 card-exercise-image">
-            <img src="<%= exercise.picture %>" />
+        <div class=“card-exercise-details” data-toggle=“modal” data-target=“#exampleModalCenter-<%= exercise.id %>“>
+          <div class=“h-100 card-exercise-image”>
+            <img src=“<%= exercise.picture %>” />
           </div>
-          <div class="card-exercise-infos">
+          <div class=“card-exercise-infos”>
             <h2><%= exercise.name %></h2>
-            <div class="tag d-flex mt-2">
-              <% categories = exercise.category.split(',') %>
+            <div class=“tag d-flex mt-2">
+              <% categories = exercise.category.split(‘,’) %>
               <% categories.each do |category| %>
-                <% if category.include?" " %>
-                  <% cat_name = category.downcase.tr!(" ", "-") %>
+                <% if category.include?” ” %>
+                  <% cat_name = category.downcase.tr!(” “, “-”) %>
                   <% else %>
                   <% cat_name = category.downcase %>
                   <% end %>
-                <p class="m-0 mr-2 <%= cat_name %>"> <%= category %> </p>
+                <p class=“m-0 mr-2 <%= cat_name %>“> <%= category %> </p>
               <% end %>
             </div>
           </div>
         </div>
-        </div>
-
-
-
-
-        <div class="modal fade" id="exampleModalCenter-<%= exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header bg-darkgray">
-                <h5 class="modal-title" id="exampleModalLongTitle">Add exercise</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+        <div class=“modal fade” id=“exampleModalCenter-<%= exercise.id %>” tabindex=“-1” role=“dialog” aria-labelledby=“exampleModalCenterTitle” aria-hidden=“true”>
+          <div class=“modal-dialog modal-dialog-centered” role=“document”>
+            <div class=“modal-content”>
+              <div class=“modal-header bg-darkgray”>
+                <h5 class=“modal-title” id=“exampleModalLongTitle”>Add exercise</h5>
+                <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close”>
+                  <span aria-hidden=“true”>&times;</span>
                 </button>
               </div>
-
-              <div class="modal-body bg-darkgray">
-                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                  <iframe width="560" height="315" src="<%= exercise.video %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class=“modal-body bg-darkgray”>
+                <div class=“embed-responsive embed-responsive-16by9 z-depth-1-half”>
+                  <iframe width=“560" height=“315” src=“<%= exercise.video %>” frameborder=“0” allow=“accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe>
                 </div>
                 <h5><%= exercise.name %></h5>
                 <h6>  <%= exercise.category %> </h6>
                 <h6> <%= exercise.id %> </h6>
                 <h6> <%= exercise.description %> </h6>
-
                 <%= simple_form_for [ @training, @training_exercise ] do |f| %>
                   <%= f.hidden_field :exercise, as: :hidden, :value => exercise.id %>
                   <%#= f.input :exercise, selected: f.exercise.category %>
                   <%= f.input :duration_in_minutes %>
-                  <%= f.submit "save", class: "btn btn-primary" %>
+                  <%= f.submit “save”, class: “btn btn-primary” %>
                 <% end %>
               </div>
             </div>

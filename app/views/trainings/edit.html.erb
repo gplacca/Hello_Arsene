@@ -1,34 +1,33 @@
 <div class="d-flex flex-wrap p-3 justify-content-center align-items-center vw-100" style="height: 35vh;">
-
-  <div class="p-3 h-100" style="width: 30%;">
-    <h5 class="text-left text-white"><%= @training.name %></h5>
-    <h5 class="text-left text-white"><%= @training.start_at %></h5>
-    <h5 class="text-left text-white"><%= @training.duration_in_minutes %> minutes</h5>
-    <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %>
+  <div class=“p-3 h-100” style=“width: 30%;“>
+    <h5 class=“text-left text-white”><%= @training.name %></h5>
+    <h5 class=“text-left text-white”><%= @training.start_at %></h5>
+    <h5 class=“text-left text-white”><%= @training.duration_in_minutes %> minutes</h5>
+    <%= link_to “Save session”, team_path(@training.team), class:“save-session-button” %>
   </div>
-  <div class="p-3 h-100" style="width: 30%;">
-    <!-- <div class="progress-bar-container"> -->
+  <div class=“p-3 h-100" style=“width: 30%;“>
+    <!-- <div class=“progress-bar-container”> -->
       <section>
-        <article class="pb-5">
-          <input type="radio" name="switch-pos" id="pos-0">
-          <input type="radio" name="switch-pos" id="pos-1">
-          <input type="radio" name="switch-pos" id="pos-2" checked>
-          <input type="radio" name="switch-pos" id="pos-3">
-          <div class="chart mb-5">
-            <div class="bar bar-30 green">
-              <div class="face top">
-                <div class="growing-bar" style="width: <%= @training.total_perc %>%;"></div>
+        <article class=“pb-5">
+          <input type=“radio” name=“switch-pos” id=“pos-0”>
+          <input type=“radio” name=“switch-pos” id=“pos-1">
+          <input type=“radio” name=“switch-pos” id=“pos-2” checked>
+          <input type=“radio” name=“switch-pos” id=“pos-3">
+          <div class=“chart mb-5”>
+            <div class=“bar bar-30 green”>
+              <div class=“face top”>
+                <div class=“growing-bar” style=“width: <%= @training.total_perc %>%;“></div>
               </div>
-              <div class="face side-0">
-                <div class="growing-bar" style="width: <%= @training.total_perc %>%;"></div>
+              <div class=“face side-0”>
+                <div class=“growing-bar” style=“width: <%= @training.total_perc %>%;“></div>
               </div>
-              <div class="face floor">
-                <div class="growing-bar" style="width: <%= @training.total_perc %>%;"></div>
+              <div class=“face floor”>
+                <div class=“growing-bar” style=“width: <%= @training.total_perc %>%;“></div>
               </div>
-              <div class="face side-a"></div>
-              <div class="face side-b"></div>
-              <div class="face side-1">
-                <div class="growing-bar" style="width: <%= @training.total_perc %>%;"></div>
+              <div class=“face side-a”></div>
+              <div class=“face side-b”></div>
+              <div class=“face side-1”>
+                <div class=“growing-bar” style=“width: <%= @training.total_perc %>%;“></div>
               </div>
             </div>
           </div>
@@ -36,44 +35,44 @@
       </section>
     <!-- </div> -->
   </div>
-  <div class="p-3 h-100" style="width: 30%;">
-    <div class="cards d-flex flex-column justify-content-start align-items-end">
+  <div class=“p-3 h-100” style=“width: 30%;“>
+    <div class=“cards d-flex flex-column justify-content-start align-items-end”>
       <% @training.training_exercises.order(:created_at).each do |training_exercise| %>
-      <div class="card-training-exercise mb-2 w-75">
+      <div class=“card-training-exercise mb-2 w-75">
         <h3> <%= training_exercise.exercise.name  %> </h3>
-        <div class="d-flex justify-content-between">
-          <p class="m-0 p-0"> <%= training_exercise.duration_in_minutes %> minutes </p>
-          <div class="d-flex align-items-center justify-content-center">
-            <button type="edit-button" class="edit-button" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
+        <div class=“d-flex justify-content-between”>
+          <p class=“m-0 p-0"> <%= training_exercise.duration_in_minutes %> minutes </p>
+          <div class=“d-flex align-items-center justify-content-center”>
+            <button type=“edit-button” class=“edit-button” data-toggle=“modal” data-target=“#modal_edit_training_exercise-<%= training_exercise.id %>“>
               Edit
             </button>
-            <%= link_to "Delete", training_training_exercise_path(@training, training_exercise), class:"delete-button",
+            <%= link_to “Delete”, training_training_exercise_path(@training, training_exercise), class:“delete-button”,
                       method: :delete,
-                      data: { confirm: "Are you sure?" } %>
+                      data: { confirm: “Are you sure?” } %>
           </div>
         </div>
       </div>
-      <div class="">
-        <div class="row">
-          <div class="modal fade" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Add session</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+      <div class=“”>
+        <div class=“row”>
+          <div class=“modal fade” id=“modal_edit_training_exercise-<%= training_exercise.id %>” tabindex=“-1" role=“dialog” aria-labelledby=“exampleModalCenterTitle” aria-hidden=“true”>
+            <div class=“modal-dialog modal-dialog-centered” role=“document”>
+              <div class=“modal-content”>
+                <div class=“modal-header”>
+                  <h5 class=“modal-title” id=“exampleModalLongTitle”>Add session</h5>
+                  <button type=“button” class=“close” data-dismiss=“modal” aria-label=“Close”>
+                    <span aria-hidden=“true”>&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div class=“modal-body”>
                   <%= simple_form_for [ @training, training_exercise ] do |f| %>
                     <%= f.hidden_field :exercise, as: :hidden, :value => training_exercise.id %>
                     <%#= f.input :exercise, selected: f.exercise.category %>
                     <%= f.input :duration_in_minutes %>
-                    <%= f.submit "Edit", class: "btn btn-primary" %>
+                    <%= f.submit “Edit”, class: “btn btn-primary” %>
                   <% end %>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class=“modal-footer”>
+                  <button type=“button” class=“btn btn-secondary” data-dismiss=“modal”>Close</button>
                 </div>
               </div>
             </div>
@@ -84,24 +83,20 @@
     </div>
   </div>
 </div>
-<!--         <div class="card text-center">
-          <div class="card-header">
-            <ul class="nav nav-pills card-header-pills">
-              <li class="nav-item">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_edit_training_exercise-<%#= training_exercise.id %>">
+<!--         <div class=“card text-center”>
+          <div class=“card-header”>
+            <ul class=“nav nav-pills card-header-pills”>
+              <li class=“nav-item”>
+                <button type=“button” class=“btn btn-primary” data-toggle=“modal” data-target=“#modal_edit_training_exercise-<%#= training_exercise.id %>“>
                   Edit
                 </button>
               </li>
-              <li class="nav-item">
-                 <%#= link_to "Delete", training_training_exercise_path(@training, training_exercise),
+              <li class=“nav-item”>
+                 <%#= link_to “Delete”, training_training_exercise_path(@training, training_exercise),
                 method: :delete,
-                data: { confirm: "Are you sure?" } %>
+                data: { confirm: “Are you sure?” } %>
               </li>
             </ul>
           </div> -->
-
-
-
 </div>
-
-<%= render "exercises/exercises_list" %>
+<%= render “exercises/exercises_list” %>
