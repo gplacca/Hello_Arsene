@@ -408,30 +408,54 @@
     </div>
   </div>
 
-  <div class="container mb-5 pb-5">
-    <div class="row row-players">
-      <div class="col-12">
-        <div class="row">
-          <div class ="team-players">
-            <% @players.each do |player| %>
-            <div class="col-3 py-3">
-                <div class="h-100 d-flex flex-column justify-content-between">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title"> <%= player.first_name %> </h5>
-                      <h3 class="card-title"> <%= player.last_name %></h3>
-                      <p class="card-text"> <%= player.post %></p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
+
+  <div class="effectif">
+    <h1>Effectif</h1>
   </div>
+
+    <!-- <div class="container mb-5 pb-5"> -->
+      <!-- <div class="row row-players"> -->
+        <!-- <div class="col-12"> -->
+          <!-- <div class="row"> -->
+  <div class="d-flex flex-wrap justify-content-center align-items-left vw-100">
+            <!-- <div class ="team-players"> -->
+    <% @players.each do |player| %>
+      <!-- <div class="col-3 py-3"> -->
+          <!-- <div class="h-100 d-flex flex-column justify-content-between"> -->
+
+      <div class="card-player">
+
+        <img src="<%= player.picture %>">
+        <div class="number">
+          <%= player.number %>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+            <div class="card m-3" style="width: 18rem;">
+              <img class="card-img-top" src="<%= player.picture %>" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"> <%= player.first_name %> </h5>
+                <h3 class="card-title"> <%= player.last_name %></h3>
+                <p class="card-text"> <%= player.post %></p>
+              </div>
+            </div>
+          <!-- </div> -->
+      <!-- </div> -->
+      <% end %>
+            <!-- </div> -->
+  </div>
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
 
 
   <!-- Modal -->
