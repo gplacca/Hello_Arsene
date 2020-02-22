@@ -7,27 +7,28 @@
     </form>
   </form>
 </nav>
-<div class=“container mb-5 pb-5">
-  <div class=“row”>
-    <div class=“col-12">
-      <div class=“d-flex flex-wrap”>
-        <% @exercises.each do |exercise| %>
-        <div class=“card-exercise-details” data-toggle=“modal” data-target=“#exampleModalCenter-<%= exercise.id %>“>
-          <div class=“h-100 card-exercise-image”>
-            <img src=“<%= exercise.picture %>” />
-          </div>
-          <div class=“card-exercise-infos”>
-            <h2><%= exercise.name %></h2>
-            <div class=“tag d-flex mt-2">
-              <% categories = exercise.category.split(‘,’) %>
-              <% categories.each do |category| %>
-                <% if category.include?” ” %>
-                  <% cat_name = category.downcase.tr!(” “, “-”) %>
-                  <% else %>
-                  <% cat_name = category.downcase %>
-                  <% end %>
-                <p class=“m-0 mr-2 <%= cat_name %>“> <%= category %> </p>
-              <% end %>
+
+<div class="container mb-5 pb-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+
+      <% @exercises.each do |exercise| %>
+        <div class="col-3 py-3">
+          <div class="card-exercise d-flex h-100 justify-content-between align-items-center" data-toggle="modal" data-target="#exampleModalCenter-<%= exercise.id %>">
+            <div class="w-100 h-100 d-flex flex-column justify-content-between">
+              <h6 class="text-left"><%= exercise.name %></h6>
+              <div class="tag d-flex">
+                <% categories = exercise.category.split(',') %>
+                <% categories.each do |category| %>
+                  <% if category.include?" " %>
+                    <% cat_name = category.downcase.tr!(" ", "-") %>
+                    <% else %>
+                    <% cat_name = category.downcase %>
+                    <% end %>
+                  <p class="m-0 mr-2 <%= cat_name %>"> <%= category %> </p>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
