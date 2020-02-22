@@ -4,7 +4,6 @@
 //   grid-gap: 16px;
 //   background-color: white;
 // }
-
 // .exercise-card {
 //   color: white;
 //   background-position: center;
@@ -12,125 +11,169 @@
 //   background-size: cover;
 //   text-align: center;
 // }
-
 body.trainings-edit {
   background-color: #333333;
   color: white;
 }
-
 .card-exercise:hover {
   min-height: 105px;
   border-radius: 5px;
   background: linear-gradient(to bottom right, #525252, #333333);
   padding: 10px;
   box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
-  color: #dedede;
+  color: #DEDEDE;
 }
-
 .card-exercise {
   min-height: 105px;
   border-radius: 5px;
-  background: #3e3e3e;
+  background: #3E3E3E;
   padding: 10px;
   box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
 }
-
 .card-exercise h6 {
     font-size: 15px;
 }
-
 .tag {
   font-size: 8px;
 }
-
 .jeu-devant-le-but {
-  border: solid 1px #fc5050;
+  border: solid 1px #FC5050;
   border-radius: 6px;
-  color: #fc5050;
+  color: #FC5050;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .phases-offensives {
-  border: solid 1px #ffd00c;
+  border: solid 1px #FFD00C;
   border-radius: 6px;
-  color: #ffd00c;
+  color: #FFD00C;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
-
 .echauffement {
-  border: solid 1px #ff008e;
+  border: solid 1px #FF008E;
   border-radius: 6px;
-  color: #ff008e;
+  color: #FF008E;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .tactique {
-  border: solid 1px #82c7eb;
+  border: solid 1px #82C7EB;
   border-radius: 6px;
-  color: #82c7eb;
+  color: #82C7EB;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .conservation {
-  border: solid 1px #ff5722;
+  border: solid 1px #FF5722;
   border-radius: 6px;
-  color: #ff5722;
+  color: #FF5722;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .opposition {
-  border: solid 1px #dfe38e;
+  border: solid 1px #DFE38E;
   border-radius: 6px;
-  color: #dfe38e;
+  color: #DFE38E;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .technique {
-  border: solid 1px #7fe7cc;
+  border: solid 1px #7FE7CC;
   border-radius: 6px;
-  color: #7fe7cc;
+  color: #7FE7CC;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .phases-défensives {
-  border: solid 1px #79a8a9;
+  border: solid 1px #79A8A9;
   border-radius: 6px;
-  color: #79a8a9;
+  color: #79A8A9;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
 .prépa-physique {
-  border: solid 1px #ffffff;
+  border: solid 1px #FFFFFF;
   border-radius: 6px;
-  color: #ffffff;
+  color: #FFFFFF;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 6px;
   padding-right: 6px;
 }
-
+.card-exercise-details {
+  overflow: hidden;
+  height: 120px;
+  width: 500px;
+  margin: 20px;
+  background: #3E3E3E;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-right: 16px;
+}
+.card-exercise-details:hover {
+  background: linear-gradient(to bottom right, #525252, #333333);
+}
+.card-exercise-image {
+  overflow: hidden;
+}
+.card-exercise-details img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+  filter: grayscale(.8);
+  transition: all 0.5s ease-in-out;
+  transform-origin: 50%;
+  object-position: center;
+  margin-right: 25px;
+}
+.card-exercise-details:hover img {
+  filter: grayscale(0);
+  height: 104%;
+  // transform: scale3d(1.03, 1.03, 1.03);
+  transform-origin: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.card-exercise-details h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #DFD3D3;
+}
+.card-exercise-details p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.card-exercise-details .card-exercise-infos {
+  text-align: left;
+  width: 360px;
+}
+.progress-bar-container {
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4em;
+}
