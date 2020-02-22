@@ -15,12 +15,17 @@ body.pages-home{
   -o-background-size: cover;
 }
 
+.home-container {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
 .home-title {
   font-size: 80px;
   font-family: helvetica-bold;
   position: absolute;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px white;
+  margin-top: 0px;
 }
 
 .home-title:hover {
@@ -38,8 +43,8 @@ body.pages-home{
 }
 
 .row-homepage {
-  padding: 50px;
-  margin: 5%;
+    padding: 50px;
+    margin: 1%;
 }
 
 .filter {
