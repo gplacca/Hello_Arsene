@@ -424,13 +424,13 @@
           <!-- <div class="h-100 d-flex flex-column justify-content-between"> -->
 
       <div class="card-player">
-
         <img src="<%= player.picture %>">
         <div class="number">
           <%= player.number %>
         </div>
-
-
+        <h3 class="player-last-name"> <%= player.last_name %></h3>
+        <h2 class="player-first-name"> <%= player.first_name %></h2>
+        <h4 class="player-post"> <%= player.post %></h4>
 
       </div>
 
@@ -439,14 +439,6 @@
 
 
 
-            <div class="card m-3" style="width: 18rem;">
-              <img class="card-img-top" src="<%= player.picture %>" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"> <%= player.first_name %> </h5>
-                <h3 class="card-title"> <%= player.last_name %></h3>
-                <p class="card-text"> <%= player.post %></p>
-              </div>
-            </div>
           <!-- </div> -->
       <!-- </div> -->
       <% end %>
@@ -485,9 +477,11 @@
               <input class="form-control string optional datepicker flatpickr-input" type="text" name="training[start_at]" id="training_start_at" readonly="readonly">
             </div>
             <div class="form-group integer required training_duration_in_minutes">
-              <label class="integer required" for="training_duration_in_minutes">Durée en min<abbr title="required">*</abbr>
-              </label>
-              <input class="form-control numeric integer required" type="number" step="1" name="training[duration_in_minutes]" id="training_duration_in_minutes">
+              <label class="integer required" for="training_duration_in_minutes">Durée en min<abbr title="required"></abbr></label>
+              <div class="slidecontainer">
+                <input class="slider" type="range" min="0" max="100" value="50" id="training_duration_in_minutes" name="training[duration_in_minutes]">
+              </div>
+              <!-- <input class="form-control numeric integer required" type="number" step="1" name="training[duration_in_minutes]" id="training_duration_in_minutes"> -->
             </div>
 
             <%= f.submit "Créer", class: "btn btn-success rounded btn-lg button-trainings" %>

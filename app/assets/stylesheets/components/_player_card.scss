@@ -1,8 +1,13 @@
 .card-player {
+  margin: 7px;
   height: 450px;
   width: 280px;
   border-radius: 4px;
-  background-color: white;
+  background-color: #3E3E3E;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-player img {
@@ -10,10 +15,74 @@
   width: 280px;
   border-radius: 4px 4px 0px 0px;
   object-fit: cover;
+  filter: grayscale(0.8);
+  z-index: 2;
+  object-position: center;
 }
 
 .card-player .number {
-  font-size: 25px;
+  width: 250px;
+  height: 250px;
+  font-size: 175px;
+  font-weight: bolder;
+  color: rgba(253, 8, 15, 0.0);
+  z-index: 5;
+  vertical-align: top;
+  text-align: right;
+  position: absolute;
+  bottom: -37%;
+  right: -1%;
+  margin-left: -150px;
+  transition: all 0.6s ease-in-out;
+  font-family: ZCOOL QingKe HuangYou;
+}
+
+.player-first-name{
+  color: #1EDD88;
+  height: 50px;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 5px;
+  font-family: Titillium web;
+}
+
+.player-last-name{
+  color: #fff;
+  text-align: left;
+  height: 15px;
+  font-size: 26px;
+  margin-bottom: 0px;
+  padding-left: 70px;
+  font-family: Titillium web;
+
+}
+
+.player-post{
+  color: #fff;
+  text-align: left;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 5px;
+  font-family: Titillium web;
+}
+
+.card-player:hover .number {
+  color: rgba(253, 8, 15, 0.8);
+  transition: all 0.6s ease-in-out;
+}
 
 
+.card-player:hover img {
+  height: 110%;
+  width: 110%;
+  border-radius: 4px 4px 0px 0px;
+  object-fit: cover;
+  filter: grayscale(0.8), brightness(0.6);
+  z-index: 2;
+  transition: all 0.6s ease-in-out;
+  // object-position: center;
+  text-align: center;
+  opacity: 0.6;
 }
