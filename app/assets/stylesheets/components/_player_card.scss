@@ -21,31 +21,51 @@
 }
 
 .card-player .number {
-  width: 150px;
+  width: 250px;
+  height: 250px;
   font-size: 175px;
   font-weight: bolder;
   color: rgba(253, 8, 15, 0.0);
   z-index: 5;
   vertical-align: top;
-  text-align: end;
+  text-align: right;
   position: absolute;
-  top: 27%;
-  left: 68%;
+  bottom: -37%;
+  right: -1%;
   margin-left: -150px;
   transition: all 0.6s ease-in-out;
+  font-family: ZCOOL QingKe HuangYou;
 }
 
 .player-first-name{
   color: #1EDD88;
-  margin-bottom: 2px;
+  height: 50px;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 5px;
+  font-family: Titillium web;
 }
 
 .player-last-name{
   color: #fff;
+  text-align: left;
+  height: 15px;
+  font-size: 26px;
+  margin-bottom: 0px;
+  padding-left: 70px;
+  font-family: Titillium web;
+
 }
 
 .player-post{
   color: #fff;
+  text-align: left;
+  height: 20px;
+  font-size: 20px;
+  padding-left: 5px;
+  font-family: Titillium web;
 }
 
 .card-player:hover .number {
