@@ -1,11 +1,14 @@
-<div class="d-flex flex-wrap p-3 justify-content-center align-items-center vw-100" style="height: 35vh;">
+
+
+<div class="d-flex flex-wrap p-3 mt-5 mb-5 justify-content-center align-items-center vw-100" style="height: 35vh;">
   <div class="p-3 h-100" style="width: 30%;">
-    <h5 class="text-left text-white"><%= @training.name %></h5>
+    <h5 class="training-name text-left"><%= @training.name %></h5>
 
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %m/%d/%Y") %></h5>
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h5>
     <h5 class="text-left text-white"> Durée :<%= @training.duration_in_minutes %> minutes</h5>
-    <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %>
+    <h1 class="mt-0"> <%= @number_of_exercises %> </h1>
+    <div class="search"> <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %> </div>
   </div>
   <div class="p-3 h-100" style="width: 30%;">
     <!-- <div class="progress-bar-container"> -->

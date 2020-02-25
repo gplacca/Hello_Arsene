@@ -1,11 +1,11 @@
 .card-player {
-  margin: 7px;
+  margin: 14px;
   height: 450px;
   width: 280px;
   border-radius: 4px;
   background-color: #3E3E3E;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 4;
   position: relative;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@
   border-radius: 4px 4px 0px 0px;
   object-fit: cover;
   filter: grayscale(0.8);
-  z-index: 2;
+  z-index: 6;
   object-position: center;
 }
 
@@ -80,7 +80,7 @@
   border-radius: 4px 4px 0px 0px;
   object-fit: cover;
   filter: grayscale(0.8), brightness(0.6);
-  z-index: 2;
+  z-index: 6;
   transition: all 0.6s ease-in-out;
   // object-position: center;
   text-align: center;
