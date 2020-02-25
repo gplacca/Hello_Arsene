@@ -23,6 +23,8 @@ class TrainingsController < ApplicationController
     end
     @training = Training.find(params[:id])
     @training_exercise = TrainingExercise.new
+
+    @number_of_exercises = @training.training_exercises.count
   end
 
   def show
