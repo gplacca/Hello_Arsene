@@ -8,7 +8,7 @@ body.pages-home{
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://res.cloudinary.com/dv7b712cp/image/upload/v1580242546/Hello%20Arsene/hello-arsene-home.jpg') no-repeat center center fixed;
+  background: url('https://res.cloudinary.com/dv7b712cp/image/upload/v1580242546/Hello%20Arsene/hello-arsene-home.jpg') no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -105,7 +105,6 @@ body.pages-home{
  margin-top: 0;
  margin-right: auto;
  margin-left: auto;
- padding-top: 40px;
  padding-bottom: 40px;
  text-align: center;
  background-color: #333333;
@@ -115,11 +114,61 @@ body.pages-home{
 }
 
 .big-paragraph {
+  margin-top: 20px;
   color: white;
   padding: 30px;
-  transform: skewY(-4deg);
+  transform: skewY(-4.5deg);
 }
 
-.footer{
-  display: none;
+.big-paragraph h2{
+margin-bottom: 30px;
 }
+
+.row-paragraph {
+  color: white;
+  padding: 30px;
+  transform: skewY(-4.5deg);
+}
+
+.paragraph-img img{
+border-radius: 5px;
+box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
+}
+
+
+.paragraph-description {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: left;
+  padding: 50px;
+}
+
+.paragraph-description-left {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: right;
+  padding: 50px;
+}
+
+.paragraph-description h3{
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: left;
+  color: #1EDD88;
+}
+
+.paragraph-description-left h3{
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: right;
+  color: #1EDD88;
+}
+
+.paragraph-description p{
+  margin: 0px;
+}
+
+.paragraph-description-left p{
+margin: 0px;
+}
+
