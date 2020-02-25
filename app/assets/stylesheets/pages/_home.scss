@@ -120,6 +120,10 @@ body.pages-home{
   transform: skewY(-4.5deg);
 }
 
+.big-paragraph h2{
+margin-bottom: 30px;
+}
+
 .row-paragraph {
   color: white;
   padding: 30px;
@@ -131,20 +135,6 @@ border-radius: 5px;
 box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
 }
 
-
-.paragraph-description h3{
-  font-size: 1.6em;
-  font-weight: 700;
-  text-align: left;
-  color: #1EDD88;
-}
-
-.paragraph-description-left h3{
-  font-size: 1.6em;
-  font-weight: 700;
-  text-align: right;
-  color: #1EDD88;
-}
 
 .paragraph-description {
   font-size: 1.2em;
@@ -160,6 +150,25 @@ box-shadow: 2px 2px 10px rgba(0,0,0,.4), 2px 2px 15px rgba(0,0,0,.2);
   padding: 50px;
 }
 
+.paragraph-description h3{
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: left;
+  color: #1EDD88;
+}
 
+.paragraph-description-left h3{
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: right;
+  color: #1EDD88;
+}
 
+.paragraph-description p{
+  margin: 0px;
+}
+
+.paragraph-description-left p{
+margin: 0px;
+}
 
