@@ -1,7 +1,9 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
   background: #333333;
   box-shadow: 0px 1px 5px black;
+  padding: 5px 15px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -15,10 +17,6 @@
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
@@ -28,7 +26,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-    width: 250px;
+  width: 250px;
 }
 
 .brand {
@@ -48,3 +46,6 @@
   margin-bottom: 0px;
 }
 
+#navbarDropdown {
+  margin-left: 15px;
+}

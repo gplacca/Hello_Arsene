@@ -30,7 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" id="exampleModalCenter-<%= exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade modal_training_exercise" id="exampleModalCenter-<%= exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header bg-darkgray">
@@ -50,7 +50,7 @@
                 <%= simple_form_for [ @training, @training_exercise ] do |f| %>
                   <%= f.hidden_field :exercise, as: :hidden, :value => exercise.id %>
                   <%#= f.input :exercise, selected: f.exercise.category %>
-                  <%= f.input :duration_in_minutes %>
+                  <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: '240', id: "input_create_training_exercise_duration_in_minutes-#{exercise.id}"}, label_html: {id: "label_create_training_exercise_duration_in_minutes-#{exercise.id}"} %>
                   <%= f.submit "save", class: "btn btn-primary" %>
                 <% end %>
               </div>
@@ -62,3 +62,39 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  if((document.querySelectorAll(".modal_training_exercise").length > 0)) {
+    var exModals = document.querySelectorAll(".modal_training_exercise");
+
+    exModals.forEach((exmodal) => {
+      var exModalId = exmodal.id.split("-")[1];
+      console.log(exModalId);
+      var exModalSlider = document.querySelector(`#input_create_training_exercise_duration_in_minutes-${exModalId}`);
+      var exModalTime = document.querySelector(`#input_create_training_exercise_duration_in_minutes-${exModalId}`).value;
+      console.log(exModalTime);
+      var exModalLabel = document.querySelector(`#label_create_training_exercise_duration_in_minutes-${exModalId}`);
+      console.log(exModalLabel);
+      exModalLabel.innerHTML = `Durée en minutes : ${exModalTime}`; // Display the default slider value
+
+      // Update the current slider value (each time you drag the slider handle)
+      exModalSlider.oninput = function() {
+        exModalLabel.innerHTML = `Durée en minutes : ${this.value}`;
+        console.log(this.value)
+      }
+    })
+  }
+
+
+  // var slider2 = document.getElementById("input_create_training_exercise_duration_in_minutes");
+  // var output2 = document.getElementById("label_create_training_exercise_duration_in_minutes");
+  // output2.innerHTML = `Durée en minutes : ${slider2.value}`; // Display the default slider2 value
+
+  // // Update the current slider2 value (each time you drag the slider2 handle)
+  // slider2.oninput = function() {
+  //   output2.innerHTML = `Durée en minutes : ${this.value}`;
+  //   console.log(this.value)
+  //   // console.log(output)
+  // }
+</script>

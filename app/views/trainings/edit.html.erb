@@ -1,5 +1,3 @@
-
-
 <div class="d-flex flex-wrap p-3 mt-5 mb-5 justify-content-center align-items-center vw-100" style="height: 35vh;">
   <div class="p-3 h-100" style="width: 30%;">
     <h5 class="training-name text-left"><%= @training.name %></h5>
@@ -49,9 +47,14 @@
           <p class="m-0 p-0"> <%= training_exercise.duration_in_minutes %> minutes </p>
           <div class="d-flex align-items-center justify-content-center">
             <button type="edit-button" class="edit-button" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
-              Edit
+              <img src="https://res.cloudinary.com/dbuix43pi/image/upload/v1582669867/Hello%20Arsene/icones/pencil_pxohaq.png" alt="" class="edit-image">
             </button>
-            <%= link_to "Delete", training_training_exercise_path(@training, training_exercise), class:"delete-button",
+
+            <%= link_to training_training_exercise_path(@training, training_exercise) do %>
+              <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png" %>
+            <% end %>
+
+            <%#= link_to image_tag('https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png'), training_training_exercise_path(@training, training_exercise), { size: '20x20'}, class:"delete-button",
                       method: :delete,
                       data: { confirm: "Are you sure?" } %>
           </div>
@@ -59,7 +62,7 @@
       </div>
       <div class="">
         <div class="row">
-          <div class="modal fade" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal fade modal_edit_training_exercise" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -72,7 +75,7 @@
                   <%= simple_form_for [ @training, training_exercise ] do |f| %>
                     <%= f.hidden_field :exercise, as: :hidden, :value => training_exercise.id %>
                     <%#= f.input :exercise, selected: f.exercise.category %>
-                    <%= f.input :duration_in_minutes %>
+                    <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: '240', id: "input_training_exercise_duration_in_minutes-#{training_exercise.id}", class: "input_training_exercise_duration_in_minutes"}, label_html: {id: "label_training_exercise_duration_in_minutes-#{training_exercise.id}"} %>
                     <%= f.submit "Edit", class: "btn btn-primary" %>
                   <% end %>
                 </div>
@@ -105,3 +108,29 @@
           </div> -->
 </div>
 <%= render "exercises/exercises_list" %>
+
+<script>
+
+  if((document.querySelectorAll(".modal_edit_training_exercise").length > 0)) {
+    var editModals = document.querySelectorAll(".modal_edit_training_exercise");
+
+    editModals.forEach((modal) => {
+      var exId = modal.id.split("-")[1];
+      console.log(exId);
+      var exSlider = document.querySelector(`#input_training_exercise_duration_in_minutes-${exId}`);
+      var exTime = document.querySelector(`#input_training_exercise_duration_in_minutes-${exId}`).value;
+      console.log(exTime);
+      var exLabel = document.querySelector(`#label_training_exercise_duration_in_minutes-${exId}`);
+      console.log(exLabel);
+      exLabel.innerHTML = `Durée en minutes : ${exTime}`; // Display the default slider value
+
+      // Update the current slider value (each time you drag the slider handle)
+      exSlider.oninput = function() {
+        exLabel.innerHTML = `Durée en minutes : ${this.value}`;
+        console.log(this.value)
+      }
+    })
+  }
+
+
+</script>
