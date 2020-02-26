@@ -9,23 +9,24 @@
   border-bottom: 1px solid white;
 }
 
+.card-training-exercise2 {
+  background-color: transparent;
+  padding: 0px 10px 10px;
+  border: none;
+}
+
 .card-training-exercise h3 {
   margin-top: 12px;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-// .card-training-exercise h5 {
-//   margin-left: 6px;
-//   margin-bottom: 6px;
-//   color: white;
-//   font-size: 13px;
-// }
+
 
 .card-training-exercise p {
-  margin-top: 16px;
+  margin: none;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .edit-image {
@@ -43,6 +44,10 @@
   margin-right: 5px;
 }
 
+.edit-button:hover {
+  border: none;
+}
+
 .delete-button img{
   margin-left: 5px;
   height: 20px;
@@ -56,6 +61,12 @@
   height: 350px;
   background-color: #333333
 
+}
+
+
+.content-card-training-exercise p{
+  height: 7px;
+  vertical-align: middle;
 }
 
 // .edit-button {

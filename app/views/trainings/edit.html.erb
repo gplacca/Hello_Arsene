@@ -2,10 +2,9 @@
   <div class="p-3 h-100" style="width: 30%;">
     <h5 class="training-name text-left"><%= @training.name %></h5>
 
-    <h5 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %m/%d/%Y") %></h5>
+    <h5 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %d/%m/%Y") %></h5>
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h5>
     <h5 class="text-left text-white"> Durée :<%= @training.duration_in_minutes %> minutes</h5>
-    <h1 class="mt-0"> <%= @number_of_exercises %> </h1>
     <div class="search"> <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %> </div>
   </div>
   <div class="p-3 h-100" style="width: 30%;">
@@ -38,21 +37,33 @@
       </section>
     <!-- </div> -->
   </div>
-  <div class="p-3 h-100" style="width: 30%;">
-    <div class="cards d-flex flex-column justify-content-start align-items-end">
+  <div class="p-3 h-100 align-items-end" style="width: 30%;">
+    <div class="cards-training-exercise3 d-flex flex-column align-items-end">
+      <% if @number_of_exercises == 0 %>
+        <p> Un entrainement sans exo, c'est comme des crampons moulés dans la boue, ça sert à rien ! </p>
+        <% elsif @number_of_exercises == 1 %>
+        <h3 class="mb-2"> Au programme : <%= @number_of_exercises %> exo ! </h3>
+        <% else %>
+        <h3 class="mb-2"> Au programme : <%= @number_of_exercises %> exos ! </h3>
+        <% end %>
       <% @training.training_exercises.order(:created_at).each do |training_exercise| %>
-      <div class="card-training-exercise mb-2 w-75">
-        <h3> <%= training_exercise.exercise.name  %> </h3>
-        <div class="d-flex justify-content-between">
-          <p class="m-0 p-0"> <%= training_exercise.duration_in_minutes %> minutes </p>
+      <div class="card-training-exercise mb-1 w-100">
+        <div class="content-card-training-exercise d-flex justify-content-between">
+          <h3> <%= training_exercise.duration_in_minutes %> min - <%= training_exercise.exercise.name %> </h3>
+          <!-- <p class="m-0 p-0 align-middle"> <%#= training_exercise.duration_in_minutes %> minutes </p> -->
           <div class="d-flex align-items-center justify-content-center">
             <button type="edit-button" class="edit-button" data-toggle="modal" data-target="#modal_edit_training_exercise-<%= training_exercise.id %>">
               <img src="https://res.cloudinary.com/dbuix43pi/image/upload/v1582669867/Hello%20Arsene/icones/pencil_pxohaq.png" alt="" class="edit-image">
             </button>
 
-            <%= link_to training_training_exercise_path(@training, training_exercise), { :class=>"delete-button" } do %>
-              <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png" %>
-            <% end %>
+            <%= link_to image_tag("https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png"), training_training_exercise_path(@training, training_exercise),
+                method: :delete,
+                data: { confirm: "Are you sure?" },
+                class: "delete-button"   %>
+
+            <%#= link_to training_training_exercise_path(@training, training_exercise), { :class=>"delete-button" } do %>
+              <%#= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png" %>
+            <%# end %>
 
           </div>
         </div>
@@ -75,9 +86,6 @@
                     <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: '240', id: "input_training_exercise_duration_in_minutes-#{training_exercise.id}", class: "input_training_exercise_duration_in_minutes"}, label_html: {id: "label_training_exercise_duration_in_minutes-#{training_exercise.id}"} %>
                     <%= f.submit "Edit", class: "btn btn-primary" %>
                   <% end %>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>

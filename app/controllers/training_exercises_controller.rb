@@ -44,6 +44,8 @@ class TrainingExercisesController < ApplicationController
     @training_exercise = TrainingExercise.find(params[:id])
   end
 
+
+
   private
 
   def training_exercise_params
