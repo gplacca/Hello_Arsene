@@ -5,7 +5,7 @@
   background-color: rgba(230, 230, 230, .4);
   border-radius: 6px;
   position: center;
-
+  cursor: pointer;
 }
 
 .search-bar .search {
@@ -27,12 +27,21 @@
 .search-bar .input{
   width: 400px;
   height: 35px;
-  background-color: rgba(230, 230, 230, 0.7);
-  border-radius: 6px;
-  border: 1px solid rgb(240, 240, 240);
+  background-color: transparent;
+  border: 0px;
+  color: white;
 }
 
-.search-bar .input:hover{
-  background-color: rgba(230, 230, 230, 0.5);
-  border: 1px solid rgb(220, 220, 220);
+.search-bar .input:focus {
+  box-shadow: none;
 }
+
+.search-bar .input::placeholder{
+  color: #b9b9b9;
+}
+
+.search-bar .input:-internal-autofill-selected {
+  background-color: rgb(124,124,124);
+}
+
+

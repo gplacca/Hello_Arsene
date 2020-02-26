@@ -1,0 +1,8 @@
+<div class="slidecontainer">
+  <input class="slider" type="range" min="0" max="100" value="50" id="training_duration_in_minutes" name="training[duration_in_minutes]">
+</div>
+
+
+<%= simple_form_for [@team, @training] do |f| %>
+  <%= f.input :duration_in_minutes, as: "range" %>
+  <% end %>

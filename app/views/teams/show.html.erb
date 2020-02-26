@@ -1,3 +1,5 @@
+
+
 <div class ="header-team">
   <div class ="filter-team">
     <div class="team-title">
@@ -413,7 +415,7 @@
     <h1>Effectif</h1>
   </div>
 
-    <!-- <div class="container mb-5 pb-5"> -->
+    <!-- <div class="container mb-5 pb-5">
       <!-- <div class="row row-players"> -->
         <!-- <div class="col-12"> -->
           <!-- <div class="row"> -->
@@ -476,13 +478,8 @@
               <label class="string optional" for="training_start_at">Date de la séance</label>
               <input class="form-control string optional datepicker flatpickr-input" type="text" name="training[start_at]" id="training_start_at" readonly="readonly">
             </div>
-            <div class="form-group integer required training_duration_in_minutes">
-              <label class="integer required" for="training_duration_in_minutes">Durée en min<abbr title="required"></abbr></label>
-              <div class="slidecontainer">
-                <input class="slider" type="range" min="0" max="100" value="50" id="training_duration_in_minutes" name="training[duration_in_minutes]">
-              </div>
-              <!-- <input class="form-control numeric integer required" type="number" step="1" name="training[duration_in_minutes]" id="training_duration_in_minutes"> -->
-            </div>
+
+            <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: '240', id: 'input_training_duration_in_minutes'}, label_html: {id: "label_training_duration_in_minutes"} %>
 
             <%= f.submit "Créer", class: "btn btn-success rounded btn-lg button-trainings" %>
           <% end %>
@@ -497,3 +494,19 @@
     </div>
   </div>
 </div>
+
+<script>
+
+
+
+
+  var slider = document.getElementById("input_training_duration_in_minutes");
+  var output = document.getElementById("label_training_duration_in_minutes");
+  output.innerHTML = `Durée en minutes : ${slider.value}`; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function() {
+    output.innerHTML = `Durée en minutes : ${this.value}`;
+    console.log(output)
+  }
+</script>
