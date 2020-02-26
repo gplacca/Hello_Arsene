@@ -50,18 +50,15 @@
               <img src="https://res.cloudinary.com/dbuix43pi/image/upload/v1582669867/Hello%20Arsene/icones/pencil_pxohaq.png" alt="" class="edit-image">
             </button>
 
-            <%= link_to training_training_exercise_path(@training, training_exercise) do %>
+            <%= link_to training_training_exercise_path(@training, training_exercise), { :class=>"delete-button" } do %>
               <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png" %>
             <% end %>
 
-            <%#= link_to image_tag('https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png'), training_training_exercise_path(@training, training_exercise), { size: '20x20'}, class:"delete-button",
-                      method: :delete,
-                      data: { confirm: "Are you sure?" } %>
           </div>
         </div>
       </div>
       <div class="">
-        <div class="row">
+        <div class="row align-items-center ">
           <div class="modal fade modal_edit_training_exercise" id="modal_edit_training_exercise-<%= training_exercise.id %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
