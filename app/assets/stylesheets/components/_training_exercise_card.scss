@@ -4,9 +4,9 @@
 // }
 
 .card-training-exercise {
-  background-color: #222222;
-  border-radius: 4px;
+  background-color: transparent;
   padding: 0px 10px 10px;
+  border-bottom: 1px solid white;
 }
 
 .card-training-exercise h3 {
@@ -26,6 +26,36 @@
   margin-top: 16px;
   color: white;
   font-size: 12px;
+}
+
+.edit-image {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.edit-button {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  margin-right: 5px;
+}
+
+.delete-button img{
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.modal_edit_training_exercise .modal-content{
+  width: 500px;
+  height: 350px;
+  background-color: #333333
+
 }
 
 // .edit-button {
