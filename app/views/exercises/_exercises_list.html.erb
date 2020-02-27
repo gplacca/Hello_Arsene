@@ -50,7 +50,7 @@
                 <%= simple_form_for [ @training, @training_exercise ] do |f| %>
                   <%= f.hidden_field :exercise, as: :hidden, :value => exercise.id %>
                   <%#= f.input :exercise, selected: f.exercise.category %>
-                  <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: '240', id: "input_create_training_exercise_duration_in_minutes-#{exercise.id}"}, label_html: {id: "label_create_training_exercise_duration_in_minutes-#{exercise.id}"} %>
+                  <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: @training.time_left, id: "input_create_training_exercise_duration_in_minutes-#{exercise.id}"}, label_html: {id: "label_create_training_exercise_duration_in_minutes-#{exercise.id}"} %>
                   <%= f.submit "save", class: "btn btn-primary" %>
                 <% end %>
               </div>

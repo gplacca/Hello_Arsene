@@ -21,6 +21,7 @@ class TrainingsController < ApplicationController
     else
       @exercises = Exercise.all
     end
+
     @training = Training.find(params[:id])
     @training_exercise = TrainingExercise.new
 
