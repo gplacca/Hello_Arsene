@@ -12,4 +12,8 @@ class Training < ApplicationRecord
   def total_perc
     (total_time.to_f / self.duration_in_minutes * 100) || 0
   end
+
+  def time_left
+    self.duration_in_minutes - self.training_exercises.pluck(:duration_in_minutes).reduce(:+)
+  end
 end
