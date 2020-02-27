@@ -15,6 +15,10 @@ body.pages-home{
   -o-background-size: cover;
 }
 
+.pages-home .navbar-lewagon {
+  display: none;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -74,18 +78,19 @@ body.pages-home{
     position: relative;
     width: auto;
     max-width: 100%;
-    margin-top: 0;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 40px;
     padding-bottom: 0;
     text-align: center;
     background-color: #333333;
+    transform: skewY(-4.5deg);
 }
 
 .references h3{
-  color: #333333;
-  font-family: helvetica;
+  color: white;
+  font-family: titillium web;
   font-weight: bold;
   padding: 20px;
 }
@@ -121,7 +126,7 @@ body.pages-home{
 }
 
 .big-paragraph h2{
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .row-paragraph {
@@ -359,10 +364,13 @@ margin: 0px;
   color: white;
 }
 
-
+.testimonials {
+  padding: 50px;
+}
 .testimonials h2{
   margin-top: 20px;
   font-family: "titillium web",sans-serif;
   transform: skewY(-4.5deg);
   color: white;
+  font-weight: bold;
 }
