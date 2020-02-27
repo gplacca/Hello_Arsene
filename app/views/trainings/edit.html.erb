@@ -5,7 +5,6 @@
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %m/%d/%Y") %></h5>
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h5>
     <h5 class="text-left text-white"> Durée :<%= @training.duration_in_minutes %> minutes</h5>
-    <h1 class="mt-0"> <%= @number_of_exercises %> </h1>
     <div class="search"> <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %> </div>
   </div>
   <div class="p-3 h-100" style="width: 30%;">
@@ -39,6 +38,14 @@
     <!-- </div> -->
   </div>
   <div class="p-3 h-100" style="width: 30%;">
+    <% if @number_of_exercises == 0 %>
+      <h3 class="mt-0"> Un entrainement sans exercice, c'est comme des crampons moulés sur un terrain boueux : </h3>
+        <h2> Ca sert à rien !!</h2>
+      <% elsif @number_of_exercises == 1 %>
+      <h3 class="mt-0"> Au programme : <%= @number_of_exercises %> exo  </h3>
+      <% else %>
+      <h3 class="mt-0">  Au programme : <%= @number_of_exercises %> exos </h3>
+      <% end %>
     <div class="cards d-flex flex-column justify-content-start align-items-end">
       <% @training.training_exercises.order(:created_at).each do |training_exercise| %>
       <div class="card-training-exercise mb-2 w-75">
@@ -50,8 +57,13 @@
               <img src="https://res.cloudinary.com/dbuix43pi/image/upload/v1582669867/Hello%20Arsene/icones/pencil_pxohaq.png" alt="" class="edit-image">
             </button>
 
-            <%= link_to training_training_exercise_path(@training, training_exercise), { :class=>"delete-button" } do %>
-              <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png" %>
+          <!--   <%#= link_to training_training_exercise_path(@training, training_exercise), { :class=>"delete-button" } do %>
+              <%#= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png" %>
+            <%# end %> -->
+
+            <%= link_to training_training_exercise_path(@training, training_exercise),
+            data: {:confirm => 'Are you sure?'}, :method => :delete do %>
+             <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669502/Hello%20Arsene/icones/cancel_tilr3q.png", class: 'img-test' %>
             <% end %>
 
           </div>
