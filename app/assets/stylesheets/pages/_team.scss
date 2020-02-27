@@ -264,6 +264,10 @@ body.teams-show{
   color: white;
 }
 
+.game-promo__heading {
+  font-size: 1.3rem;
+}
+
 .game-promo__middle-section {
   -webkit-tap-highlight-color: rgba(21,30,45,0.2);
   font-size: 1.6rem;
@@ -385,7 +389,7 @@ body.teams-show{
   padding-bottom: 24px;
   padding-left: 1.5%;
   color: white;
-  background: #555555;
+  background: #333333;
 }
 
 
@@ -405,7 +409,7 @@ body.teams-show{
   text-transform: uppercase;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #151e2d;
+  color: #555555;
   text-align: left;
 }
 
@@ -510,7 +514,7 @@ body.teams-show{
   padding-bottom: 22px;
   padding-left: 0px;
   padding-right: 0px;
-  background: #333333;
+  background: #555555;
   color: #fff;
 }
 
@@ -619,7 +623,7 @@ body.teams-show{
   text-align: left;
   border-spacing: 0;
   box-sizing: border-box;
-  background: #555555;
+  background: #333333;
 }
 
 .league-table__position .is-active{
@@ -642,7 +646,7 @@ body.teams-show{
   align-items: center;
   justify-content: center;
   font-size: inherit;
-  background: #151e2d;
+  background: #555555;
   color: #fff;
 }
 
@@ -680,6 +684,10 @@ body.teams-show{
   height: 10px;
   margin-left: 5px;
   display: inline-block;
+}
+
+.league-table__row--1 td {
+  background: #555555;
 }
 
 #chevron-0{
