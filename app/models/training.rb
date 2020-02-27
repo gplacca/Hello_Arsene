@@ -14,6 +14,10 @@ class Training < ApplicationRecord
   end
 
   def time_left
-    self.duration_in_minutes - self.training_exercises.pluck(:duration_in_minutes).reduce(:+)
+    if self.training_exercises.empty?
+      0
+      else
+      self.duration_in_minutes - self.training_exercises.pluck(:duration_in_minutes).reduce(:+)
+    end
   end
 end
