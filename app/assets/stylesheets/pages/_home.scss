@@ -15,6 +15,10 @@ body.pages-home{
   -o-background-size: cover;
 }
 
+.pages-home .navbar-lewagon {
+  display: none;
+}
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -359,9 +363,12 @@ margin: 0px;
   color: white;
 }
 
-
+.testimonials {
+  padding: 50px;
+}
 .testimonials h2{
   margin-top: 20px;
   font-family: "titillium web",sans-serif;
   transform: skewY(-4.5deg);
   color: white;
+}
