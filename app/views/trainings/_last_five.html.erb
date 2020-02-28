@@ -2,18 +2,21 @@
 
 <% @last_five_trainings.each do |training| %>
     <div class ="row row-last-trainings-container">
-      <div class ="col col-trainings-name">
+      <div class ="col-10 col-trainings-name">
         <p><%= training.name %></p>
       </div>
-      <div class ="col col-trainings-button">
-        <button type="button" class="btn btn-outline-success">
-          <%= link_to "Modifier", edit_training_path(training.id) %>
-        </button>
-        <button type="button" class="btn btn-outline-success">
-          <%= link_to "Voir", training_path(training.id) %>
-        </button>
+      <div class ="col-1 col-trainings-button">
+        <div class ="d-flex justify-content-end pt-3">
+            <%= link_to edit_training_path(training.id) do %>
+             <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582669867/Hello%20Arsene/icones/pencil_pxohaq.png", class: 'img-test' %>
+            <% end %>
+            <%= link_to training_path(training.id) do %>
+             <%= image_tag "https://res.cloudinary.com/dbuix43pi/image/upload/v1582910673/Hello%20Arsene/view4_czxmst.png", class: 'img-test' %>
+            <% end %>
+        </div>
+       <!--  <button type="button" class="btn btn-outline-success">
+          <%#= link_to "Voir", training_path(training.id) %>
+        </button> -->
       </div>
     </div>
 <% end %>
-
-

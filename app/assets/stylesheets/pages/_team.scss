@@ -423,7 +423,7 @@ body.teams-show{
   font-family: titillium web,Helvetica,Arial,sans-serif;
   text-align: left;
   font-size: inherit;
-  color: #fff;
+  color: #333333;
   font-weight: 700;
   box-sizing: border-box;
   margin-top: 0;
@@ -552,6 +552,42 @@ body.teams-show{
   background: #555555;
   color: white;
 }
+
+.league-table__row--featured.league-table__row_rang_le_wagon {
+  -webkit-tap-highlight-color: rgba(21,30,45,0.2);
+  line-height: 1.875;
+  color: black;
+  font-family: titillium web,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse !important;
+  text-align: left;
+  border-spacing: 0;
+  box-sizing: border-box;
+  border: none;
+  font-size: 0.8rem;
+  background: #1edd88;
+}
+
+.league-table__row--featured.league-table__row_rang_le_wagon td{
+  -webkit-tap-highlight-color: rgba(21,30,45,0.2);
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  border-collapse: collapse !important;
+  border-spacing: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  min-width: auto;
+  padding: 0px;
+  text-align: center;
+  font-family: titillium web,Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  transition: color 0.2s;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background: #1edd88;
+  color: #333333;
+}
+
 
 
 .figure{
