@@ -28,6 +28,7 @@
 
 .save-session-button {
   background-color: #1EDD88;
+  color: black;
   text-align: center;
   vertical-align: middle;
   padding: 6px;
@@ -42,7 +43,7 @@
   right: 40px;
 }
 
-.save-session-button {
+.save-session-button:hover {
   background-color: #1EDD88;
   text-align: center;
   vertical-align: middle;

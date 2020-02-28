@@ -4,7 +4,7 @@
 
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %m/%d/%Y") %></h5>
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h5>
-    <h5 class="text-left text-white"> Durée :<%= @training.duration_in_minutes %> minutes</h5>
+    <h5 class="text-left text-white"> Durée : <%= @training.duration_in_minutes %> minutes</h5>
     <%# raise %>
     <div class="search"> <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %> </div>
   </div>
