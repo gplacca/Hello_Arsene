@@ -21,7 +21,7 @@
           <% @players.each do |player| %>
               <p><%= player.first_name %> <%= player.last_name %></p>
               <% end %>
-           <%= link_to "Envoyer mail de convocation", edit_training_path(@training.id), class:"btn btn-success rounded btn-lg" %>
+           <%= link_to "Prévenir via l'application mobile", joke_path, class:"btn btn-success rounded btn-lg" %>
         </div>
       </div>
     </div>
