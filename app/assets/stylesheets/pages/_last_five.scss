@@ -1,9 +1,9 @@
-.row-last-trainings-container{
-  margin-top: 50px;
+.row-last-trainings-container {
   background: #222222;
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 1px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .row-last-trainings-container a {
@@ -21,3 +21,6 @@
   max-width: 40%;
 }
 
+.col-trainings {
+  margin-top: 23px;
+}
