@@ -10,4 +10,5 @@ Rails.application.routes.draw do
       resources :training_exercises, only: [:new, :create, :show, :destroy, :update]
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'joke' => 'pages#joke', as: :joke
 end
