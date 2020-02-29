@@ -54,8 +54,7 @@
 .modal_edit_training_exercise .modal-content{
   width: 500px;
   height: 350px;
-  background-color: #333333
-
+  background-color: #333333;
 }
 
 // .edit-button {
@@ -81,4 +80,18 @@
 //   margin: 3px;
 // }
 
+.modal-body-exercise {
+  width: 800px;
+  height: 700px;
+}
 
+.modal-header-exercise {
+  width: 800px;
+  height: 45px;
+}
+
+.duration_training_exercise {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
