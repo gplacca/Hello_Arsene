@@ -457,13 +457,13 @@
         </div>
         <div class="modal-body">
           <%= simple_form_for [@team, @training] do |f| %>
-            <div class="form-group string optional training_name">
-              <label class="string optional" for="training_name">Nom de la séance</label>
-              <input class="form-control string optional" type="text" name="training[name]" id="training_name">
-            </div>
             <div class="form-group string optional training_start_at">
               <label class="string optional" for="training_start_at">Date de la séance</label>
               <input class="form-control string optional datepicker flatpickr-input" type="text" name="training[start_at]" id="training_start_at" readonly="readonly">
+            </div>
+            <div class="form-group string optional training_name">
+              <label class="string optional" for="training_name">Nom de la séance</label>
+              <input class="form-control string optional" type="text" name="training[name]" id="training_name">
             </div>
 
             <%= f.input :duration_in_minutes, as: "range", label: "Durée en minutes: 60", required: false, input_html: { min: '0', step: '5', max: '240', id: 'input_training_duration_in_minutes'}, label_html: {id: "label_training_duration_in_minutes"} %>
