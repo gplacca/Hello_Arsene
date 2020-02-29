@@ -27,33 +27,13 @@
 }
 
 .save-session-button {
+  height: 35px;
   background-color: #1EDD88;
+  border-radius: 6px;
   color: black;
   text-align: center;
   vertical-align: middle;
-  padding: 6px;
-  width: 120px;
-  height: 40px;
-  border: none;
-  margin: 3px;
-  border-radius: 4px;
-  box-shadow: -1px -1px 4px black;
-  // position: fixed;
-  // bottom: 15px;
-  right: 40px;
+  padding-top: 3px;
 }
 
-.save-session-button:hover {
-  background-color: #1EDD88;
-  text-align: center;
-  vertical-align: middle;
-  padding-top: 7px;
-  width: 120px;
-  height: 40px;
-  border: none;
-  margin: 3px;
-  // position: fixed;
-  // bottom: 15px;
-  right: 40px;
-}
 

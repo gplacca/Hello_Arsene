@@ -3,7 +3,7 @@
 <% @last_five_trainings.each do |training| %>
     <div class ="row row-last-trainings-container">
       <div class ="col-10 col-trainings-name">
-        <p><%= training.name %></p>
+        <p><%= training.name %> - <%= training.start_at.strftime("%m/%d/%Y") %></p>
       </div>
       <div class ="col-1 col-trainings-button">
         <div class ="d-flex justify-content-end pt-3">
