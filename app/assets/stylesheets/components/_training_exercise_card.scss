@@ -82,7 +82,7 @@
 
 .modal-body-exercise {
   width: 800px;
-  height: 700px;
+  max-height: 700px;
 }
 
 .modal-header-exercise {
@@ -91,7 +91,17 @@
 }
 
 .duration_training_exercise {
-  width: 800px;
   display: flex;
   justify-content: center;
+}
+
+#new_training_exercise .search {
+    width: 100px;
+    height: 35px;
+    background-color: #1EDD88;
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
 }
