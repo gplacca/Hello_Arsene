@@ -9,21 +9,21 @@
 </div>
 
 <div class = "training-container">
+  <div class="row row-header-training">
+
+    <h2> <%= @training.name %></h2>
+  </div>
   <div class = "row row-training">
     <div class ="col col-training">
       <div class="card-training">
         <div class="card-training-infos">
-          <h2> Information de l'entrainement</h2>
-          <h3><%= @training.name %></h3>
-          <h3>Date : <%= @training.start_at %></h3>
-          <h3>Durée de la séance : <%= @training.duration_in_minutes %>min</h3>
-           <h3>Liste des joueurs à convoquer :</h3>
-          <% @players.each do |player| %>
-              <p><%= player.first_name %> <%= player.last_name %></p>
-              <% end %>
-           <%= link_to "Retrouver ma séance sur l’app mobile ", joke_path, class:"btn btn-success rounded btn-lg" %>
+          <h3 class="text-left text-white"><%= @training.name %></h3>
+          <h3 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %m/%d/%Y") %></h3>
+          <h3 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h3>
+          <h3 class="text-left text-white">Durée de la séance : <%= @training.duration_in_minutes %>min</h3>
         </div>
       </div>
+           <%= link_to "Retrouver ma séance sur l’app mobile ", joke_path, class:"btn btn-success rounded btn-lg lien_app" %>
     </div>
   <div class ="col col-training">
     <div class ="training-title">
