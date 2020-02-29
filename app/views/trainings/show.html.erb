@@ -1,59 +1,53 @@
-
-<div class ="header-team">
-  <div class ="filter-team">
-    <div class="team-title">
-      <%= image_tag "https://res.cloudinary.com/dv7b712cp/image/upload/v1581762085/lewagon-logo-square-fe76916e1b923ade71e253ae6dc031d936e5e8eebac4e26b0fbac650ea6ee360_uu73gr.png", alt: "Le Wagon", width:"120px"  %>
-      <h2><%= @training.name %></h2>
-    </div>
-  </div>
+<div class ="header-training">
 </div>
 
-<div class = "training-container">
-  <div class="row row-header-training">
+<div class="training-container">
+  <div class="training-content container d-flex flex-row justify-content-around">
+    <div class="flex-column w-50">
+      <div class="training-information">
 
-    <h2> <%= @training.name %></h2>
-  </div>
-  <div class = "row row-training">
-    <div class ="col col-training">
-      <div class="card-training">
-        <div class="card-training-infos">
-          <h3 class="text-left text-white"><%= @training.name %></h3>
-          <h3 class="text-left text-white"><%= @training.start_at.strftime("Entrainement du %m/%d/%Y") %></h3>
-          <h3 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h3>
-          <h3 class="text-left text-white">Durée de la séance : <%= @training.duration_in_minutes %>min</h3>
+        <h2 class="text-left"> <%= @training.name.upcase! %></h2>
+        <p class="text-left text-white"> Date : </p>
+        <h3 class="text-left text-white"><%= @training.start_at.strftime("%m/%d/%Y") %></h3>
+        <p class="text-left text-white"> Heure : </p>
+        <h3 class="text-left text-white"><%= @training.start_at.strftime("%I:%M%p") %></h3>
+        <p class="text-left text-white"> Durée de l'entrainement : </p>
+        <h3 class="text-left text-white"><%= @training.duration_in_minutes %>min</h3>
+        <div class="mt-4">
+          <%= link_to "Retrouver ma séance sur l’app mobile ", joke_path, class:"btn btn-success rounded btn-lg lien_app" %>
         </div>
       </div>
-           <%= link_to "Retrouver ma séance sur l’app mobile ", joke_path, class:"btn btn-success rounded btn-lg lien_app" %>
     </div>
-  <div class ="col col-training">
-    <div class ="training-title">
-      <h3> Ma sélection d'exercices</h3>
-    </div>
+
+
+    <div class="flex-column w-50">
+      <div class="training-exercises">
+        <h2 class="text-white mb-0"> PROGRAMME </h2>
         <% @training_exercises.each do |training_exercise| %>
-        <div class="card-exercise-details">
-          <div class="h-100 card-exercise-image">
-            <img src="<%= training_exercise.exercise.picture %>" />
-          </div>
-          <div class="card-exercise-infos">
-              <h3> <%= training_exercise.exercise.name %></h3>
-              <h3 class = "duration"><%= training_exercise.duration_in_minutes %> min</h3>
-            <div class="tag d-flex mt-2">
-              <% categories = training_exercise.exercise.category.split(',') %>
-              <% categories.each do |category| %>
-                <% if category.include?" " %>
-                  <% cat_name = category.downcase.tr!(" ", "-") %>
-                  <% else %>
-                  <% cat_name = category.downcase %>
-                  <% end %>
-                <p class="m-0 mr-2 <%= cat_name %>"> <%= category %> </p>
-              <% end %>
+          <div class="card-exercise-details mt-3">
+            <div class="h-100 card-exercise-image">
+              <img src="<%= training_exercise.exercise.picture %>" />
+            </div>
+            <div class="card-exercise-infos">
+                <h3 class="text-white"> <%= training_exercise.exercise.name %></h3>
+                <h3 class = "duration"><%= training_exercise.duration_in_minutes %> min</h3>
+              <div class="tag d-flex mt-2">
+                <% categories = training_exercise.exercise.category.split(',') %>
+                <% categories.each do |category| %>
+                  <% if category.include?" " %>
+                    <% cat_name = category.downcase.tr!(" ", "-") %>
+                    <% else %>
+                    <% cat_name = category.downcase %>
+                    <% end %>
+                  <p class="m-0 mr-2 <%= cat_name %>"> <%= category %> </p>
+                <% end %>
+              </div>
             </div>
           </div>
+          <% end %>
         </div>
-      <% end %>
-        <div class="button-training-2">
-          <%= link_to "Modifier", edit_training_path(@training.id), class:"btn btn-success rounded btn-lg" %>
-       </div>
+      <div class="button-training-2">
+        <%= link_to "Modifier", edit_training_path(@training.id), class:"btn btn-success rounded btn-lg" %>
       </div>
     </div>
   </div>
