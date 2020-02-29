@@ -6,7 +6,7 @@
     <h5 class="text-left text-white"><%= @training.start_at.strftime("Début de séance à %I:%M%p") %></h5>
     <h5 class="text-left text-white"> Durée : <%= @training.duration_in_minutes %> minutes</h5>
     <%# raise %>
-    <div class="search"> <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %> </div>
+    <div class="search text-left mt-4"> <%= link_to "Save session", team_path(@training.team), class:"save-session-button" %> </div>
   </div>
   <div class="p-3 h-100" style="width: 30%;">
     <!-- <div class="progress-bar-container"> -->
@@ -40,17 +40,17 @@
   </div>
   <div class="p-3 h-100" style="width: 30%;">
     <% if @number_of_exercises == 0 %>
-      <h3 class="mt-0"> Un entrainement sans exercice, c'est comme des crampons moulés sur un terrain boueux : </h3>
-        <h2> Ca sert à rien !!</h2>
+      <h4 class="mt-0 text-right"> Un entrainement sans exercice, c'est comme des crampons moulés sur un terrain boueux : </h4>
+        <h3 class="text-right"> Ca sert à rien !!</h3>
       <% elsif @number_of_exercises == 1 %>
-      <h3 class="mt-0"> Au programme : <%= @number_of_exercises %> exo  </h3>
+      <h4 class="mt-0 text-right"> Au programme : <%= @number_of_exercises %> exo  </h4>
       <% else %>
-      <h3 class="mt-0">  Au programme : <%= @number_of_exercises %> exos </h3>
+      <h4 class="mt-0 text-right">  Au programme : <%= @number_of_exercises %> exos </h4>
       <% end %>
     <div class="cards d-flex flex-column justify-content-start align-items-end">
       <% @training.training_exercises.order(:created_at).each do |training_exercise| %>
-      <div class="card-training-exercise mb-2 w-75">
-        <h3> <%= training_exercise.exercise.name  %> </h3>
+      <div class="card-training-exercise text-left mb-2 w-75">
+        <h3><strong> <%= training_exercise.exercise.name  %> </strong></h3>
         <div class="d-flex justify-content-between">
           <p class="m-0 p-0"> <%= training_exercise.duration_in_minutes %> minutes </p>
           <div class="d-flex align-items-center justify-content-center">
