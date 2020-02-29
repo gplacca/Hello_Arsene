@@ -39,6 +39,24 @@ body.teams-show{
   background-repeat: no-repeat;
 }
 
+.header-training{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 29rem;
+  padding-top: 13.625rem;
+  padding-bottom: 0px;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  background-image: url(https://res.cloudinary.com/dv7b712cp/image/upload/v1582975870/image_2_hjm8cr.png);
+  background-size: cover;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .filter-team {
   position: absolute;
   left: 0;
